@@ -1,0 +1,141 @@
+.home {
+  .location {
+    background: #f7f8f8;
+    padding: 80px 40px;
+    position: relative;
+    @include sp {
+      padding: 80px 0 0;
+      background: url(../images/webp/bg_left.webp) no-repeat left/cover;
+    }
+    &__inner {
+      @include sp {
+        padding: 0 0 80px;
+      }
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 760px;
+      background: url(../images/webp/bg_left.webp) no-repeat center/cover;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      @include sp {
+        display: none;
+      }
+    }
+    .sec-ttl {
+      text-align: center;
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 100px -120px 0 0;
+      @include sp {
+        flex-direction: column;
+        margin: 100px auto 0;
+      }
+      &__txt {
+        width: 600px;
+        @include sp {
+          width: 100%;
+        }
+        &-ttl {
+          font-size: 40px;
+          font-weight: bold;
+          line-height: 1.6;
+          letter-spacing: 0.2em;
+          @include sp {
+            font-size: 28px;
+          }
+        }
+      }
+      &__figure {
+        margin: 0 -240px 0 0;
+        width: 960px;
+        @include sp {
+          position: relative;
+          margin: 40px 0 0;
+          width: 100%;
+          z-index: 1;
+        }
+      }
+      &__thumb {
+        position: absolute;
+        bottom: 0;
+        left: -240px;
+        width: 472px;
+        @include sp {
+          display: none;
+          bottom: -160px;
+          left: -100px;
+          width: 80%;
+          z-index: 0;
+        }
+      }
+    }
+    &__btn {
+      display: inline-block;
+      margin: 40px 0 0;
+      padding: 14px 0;
+      width: 500px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      position: relative;
+      border: 3px solid #000;
+      text-align: center;
+      @include sp {
+        margin: 60px 0 0;
+        padding: 14px 0;
+        width: 100%;
+      }
+      &:before,
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        background: #000;
+        position: absolute;
+      }
+      &:before {
+        width: 30px;
+        top: 50%;
+        right: 40px;
+      }
+      &:after {
+        width: 10px;
+        top: 42%;
+        right: 40px;
+        transform: rotate(45deg);
+      }
+    }
+    ruby[data-ruby] {
+      &:before {
+        left: 34px;
+        bottom: -30px;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+        @include sp {
+          left: 50px;
+          font-size: 16px;
+          letter-spacing: 0.25em;
+        }
+      }
+    }
+    .pc-only {
+      display: block;
+      @include sp {
+        display: none;
+      }
+    }
+    .sp-only {
+      display: none;
+      @include sp {
+        display: block;
+      }
+    }
+  }
+}

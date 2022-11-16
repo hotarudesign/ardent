@@ -1,0 +1,359 @@
+@import "page/header";
+@import "page/kv";
+@import "page/contact";
+@import "page/footer";
+
+.view-page {
+  .kv {
+    background: url(../../assets/images/webp/view-page_kv.webp) no-repeat
+      center/cover;
+    @include sp {
+      padding: 50px 0 0;
+    }
+  }
+  .page-ttl {
+    ruby[data-ruby] {
+      &:before {
+        left: 35px;
+        bottom: -40px;
+        @include sp {
+          bottom: -20px;
+          left: 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .view {
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 2400px;
+      background: url(../images/webp/view-page_bg-building.webp) no-repeat
+        center/cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .inner {
+      padding: 120px 40px;
+      @include sp {
+        padding: 100px 5px;
+      }
+    }
+    &__ttl {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 28px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+  .view-visual {
+    margin: 950px 0 0;
+    background: #f7f8f8;
+    .inner {
+      position: relative;
+      padding: 77px 0 80px;
+      z-index: 6;
+    }
+    &__txt {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2.66;
+      letter-spacing: 0.25em;
+      text-align: center;
+      @include sp {
+        letter-spacing: 0.1em;
+      }
+    }
+    &__thumb {
+      width: 500px;
+      position: absolute;
+      z-index: 5;
+      @include sp {
+        width: 50%;
+      }
+      &01 {
+        top: 77px;
+        left: -250px;
+        @include sp {
+          top: 0;
+          left: -80px;
+          z-index: -1;
+        }
+      }
+      &02 {
+        top: -100px;
+        right: -250px;
+        @include sp {
+          top: -40px;
+          right: -80px;
+          z-index: -1;
+        }
+      }
+      &03 {
+        top: 440px;
+        right: 116px;
+        @include sp {
+          top: 450px;
+          right: -20px;
+          z-index: -1;
+        }
+      }
+      &04 {
+        top: 520px;
+        left: 0;
+        @include sp {
+          top: 500px;
+          left: 0;
+          z-index: -1;
+        }
+      }
+    }
+    &__illust {
+      margin: 504px 0 0;
+      @include sp {
+        margin: 280px 0 0;
+      }
+    }
+  }
+  .view-panorama {
+    .inner {
+      padding: 120px 0;
+    }
+    &__ttl {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 32px;
+        letter-spacing: 0.1em;
+      }
+    }
+    &__aerial {
+      @include sp {
+        margin: 0 0 0 -40%;
+        width: 180%;
+      }
+    }
+  }
+  .view-life {
+    padding: 120px 0;
+    background: #f7f8f8;
+    @include sp {
+      padding: 60px 5px;
+    }
+    &__ttl {
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 32px;
+        line-height: 1.7;
+      }
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      margin: 70px 0 0;
+      @include sp {
+        flex-direction: column;
+      }
+    }
+    &__left {
+      width: 49%;
+      @include sp {
+        width: 100%;
+      }
+      &-caption {
+        margin: 2% 0 0 10px;
+        @include sp {
+          margin: 2% 0 4% 10px;
+        }
+      }
+    }
+    &__center {
+      width: 23.7%;
+      @include sp {
+        width: 100%;
+      }
+      &-caption {
+        margin: 4% 0 0 10px;
+        @include sp {
+          margin: 2% 0 4% 10px;
+        }
+      }
+    }
+    &__right {
+      width: 24%;
+      @include sp {
+        width: 100%;
+      }
+      &-caption {
+        margin: 4% 0 0 10px;
+        @include sp {
+          margin: 2% 0 4% 10px;
+        }
+      }
+      &__figure {
+        &:nth-child(2) {
+          margin: 5.5% 0 0;
+        }
+      }
+    }
+  }
+  .life-info {
+    background: #f7f8f8;
+    .inner {
+      padding: 120px 0;
+      @include sp {
+        padding: 60px 5px;
+      }
+    }
+    .sec-ttl {
+      font-size: 32px;
+      letter-spacing: 0.2em;
+      color: #c68f4b;
+      text-align: center;
+    }
+    &__container {
+      display: flex;
+      margin: 64px 0 0;
+      @include sp {
+        flex-direction: column;
+      }
+      &__left,
+      &__right {
+        width: 50%;
+        @include sp {
+          width: 100%;
+        }
+      }
+      &__left {
+        .life-info__list {
+          margin: 0 40px 0 0;
+          @include sp {
+            margin: 0;
+          }
+          &:first-child .life-info__list__ttl {
+            margin: 0 0 48px;
+          }
+        }
+      }
+      &__right {
+        .life-info__list {
+          margin: 0 0 0 40px;
+          @include sp {
+            margin: 0;
+          }
+          &:first-child .life-info__list__ttl {
+            margin: 0 0 48px;
+            @include sp {
+              margin: 40px 0 48px;
+            }
+          }
+        }
+      }
+    }
+    &__list {
+      &__ttl {
+        position: relative;
+        margin: 80px 0 48px 0;
+        @include sp {
+          margin: 40px 0 48px 0;
+        }
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 1px;
+          background: #d9d9da;
+          position: absolute;
+          bottom: -24px;
+          left: 0;
+        }
+      }
+      &__desc {
+        display: inline-block;
+        width: 16%;
+        font-size: 15px;
+        line-height: 2.13;
+        letter-spacing: 0.1em;
+        @include sp {
+          width: 18%;
+          font-size: 14px;
+          letter-spacing: 0.05em;
+        }
+      }
+      &__place {
+        width: 65%;
+        @include sp {
+          width: 61%;
+        }
+      }
+      &__distance {
+        text-align: right;
+      }
+    }
+  }
+  .view-access {
+    padding: 120px 0;
+    text-align: center;
+    @include sp {
+      padding: 60px 0;
+    }
+    &__map {
+      margin: 80px 0 0;
+      @include sp {
+        margin: 40px 0 0;
+      }
+    }
+    &__btn {
+      display: block;
+      padding: 20px 0;
+      margin: 80px auto 0;
+      max-width: 440px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      position: relative;
+      border: 3px solid #000;
+      text-align: center;
+      @include sp {
+        margin: 40px auto 0;
+        width: 80%;
+      }
+      &:before,
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        background: #000;
+        position: absolute;
+      }
+      &:before {
+        width: 30px;
+        top: 50%;
+        right: 40px;
+      }
+      &:after {
+        width: 10px;
+        top: 42%;
+        right: 40px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

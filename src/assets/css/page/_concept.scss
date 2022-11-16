@@ -1,0 +1,89 @@
+.concept {
+  background: url(../images/webp/concept_bg-pc.webp) no-repeat center/cover;
+  text-align: center;
+  &__inner {
+    padding: 100px 40px 80px;
+    @include sp {
+      padding: 100px 0;
+    }
+  }
+  &__main {
+    margin: 100px 0 0;
+    @include sp {
+      text-align: center;
+    }
+    &-ttl {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      @include sp {
+        font-size: 32px;
+      }
+    }
+    &-txt {
+      margin: 60px 0 0;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 2.66;
+      letter-spacing: 0.25em;
+    }
+  }
+  &__logo {
+    margin: 100px auto 0;
+    width: 427px;
+    @include sp {
+      width: 100%;
+    }
+  }
+  &__banar {
+    margin: 80px auto 0;
+  }
+  &__btn {
+    display: inline-block;
+    position: relative;
+    margin: 60px 0 0;
+    padding: 14px 120px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border: 3px solid #000;
+    text-align: center;
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      background: #000;
+      position: absolute;
+    }
+    &:before {
+      width: 30px;
+      top: 50%;
+      right: 40px;
+    }
+    &:after {
+      width: 10px;
+      top: 42%;
+      right: 40px;
+      transform: rotate(45deg);
+    }
+  }
+  .en {
+    position: relative;
+    letter-spacing: 0.02em;
+  }
+  ruby[data-ruby] {
+    &:before {
+      left: 40px;
+      bottom: -30px;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      @include sp {
+        left: 55px;
+        font-size: 16px;
+        letter-spacing: 0.25em;
+      }
+    }
+  }
+}

@@ -1,0 +1,333 @@
+@import "page/header";
+@import "page/kv";
+@import "page/contact";
+@import "page/footer";
+
+.concept-page {
+  .kv {
+    background: url(../../assets/images/webp/concept_kv.webp) no-repeat
+      center/cover;
+    @include sp {
+      padding: 50px 0 0;
+    }
+  }
+  .concept {
+    background: url(../images/webp/concept_bg-pc.webp) no-repeat center/cover;
+    text-align: center;
+    &__inner {
+      padding: 120px 40px 0;
+      @include sp {
+        padding: 40px 5px 20px;
+      }
+    }
+    &__main {
+      @include sp {
+        margin: 0;
+        text-align: center;
+      }
+      &-ttl {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.6;
+        letter-spacing: 0.2em;
+        @include sp {
+          font-size: 32px;
+        }
+      }
+      &-txt {
+        margin: 60px 0 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2.66;
+        letter-spacing: 0.25em;
+      }
+    }
+    &__logo {
+      margin: 100px auto 0;
+      width: 427px;
+      @include sp {
+        width: 100%;
+      }
+    }
+    &__banar {
+      margin: 80px auto 0;
+    }
+  }
+}
+.concept-list {
+  margin: 120px 0 0;
+  @include sp {
+    margin: 0;
+  }
+  .concept__list {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      &:nth-child(3) .concept__list__item-ttl {
+        @include midium {
+          width: 50%;
+        }
+      }
+      @include sp {
+        flex-direction: column;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        @include sp {
+          flex-direction: column;
+        }
+      }
+      &__txt {
+        padding: 80px 0 0;
+        width: 50%;
+        @include sp {
+          width: 100%;
+        }
+      }
+      &-ttl {
+        margin: 0 auto;
+        width: 660px;
+        @include midium {
+          width: 70%;
+        }
+        @include sp {
+          width: 70%;
+        }
+      }
+      &-desc {
+        margin: 68px 0 0;
+        font-size: 28px;
+        line-height: 2;
+        letter-spacing: 0.25em;
+        text-align: center;
+        @include sp {
+          margin: 30px 0 0;
+          font-size: 20px;
+        }
+      }
+      &-thum {
+        width: 50%;
+        @include sp {
+          margin: 40px 0 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.concept-group {
+  background: #f7f8f8;
+  .inner {
+    padding: 120px 40px;
+    @include sp {
+      padding: 100px 5px;
+    }
+  }
+  &__ttl {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    @include sp {
+      font-size: 24px;
+      line-height: 2;
+    }
+  }
+  &__logo {
+    margin: 80px auto 0;
+    width: 257px;
+    @include sp {
+      margin: 40px auto 0;
+      width: 50%;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 0;
+    @include sp {
+      flex-direction: column;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 256px;
+      @include sp {
+        flex-direction: column;
+        width: 100%;
+      }
+      &__txt {
+        padding: 30px 0;
+        text-align: center;
+      }
+      &-ttl {
+        padding: 0 0 25px;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+      }
+      &-desc {
+        padding: 24px 0 0;
+        line-height: 2;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+.concept-detail {
+  .inner {
+    padding: 120px 0;
+  }
+  &__ttl {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    text-align: center;
+    @include sp {
+      font-size: 16px;
+      letter-spacing: 0.2em;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 0;
+    @include sp {
+      flex-direction: column;
+    }
+    &__item {
+      padding: 37px 0 40px;
+      width: 25%;
+      border: 1px solid #000;
+      border-right: none;
+      @include sp {
+        width: 100%;
+        border: 1px solid #000;
+        border-bottom: none;
+      }
+      &:last-child {
+        border-right: 1px solid #000;
+        @include sp {
+          border-bottom: 1px solid #000;
+        }
+      }
+      &-num {
+        font-size: 54px;
+        font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Roboto,
+          "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+          "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI",
+          "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        text-align: center;
+      }
+      &-ttl {
+        margin: 41px 0 0;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+        text-align: center;
+        color: #c68f4b;
+        @include sp {
+          margin: 30px 0 0;
+        }
+      }
+      &-desc {
+        margin: 32px 0 0;
+        padding: 0 22px 0 22px;
+        line-height: 2;
+        letter-spacing: 0.05em;
+        @include sp {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+  &__foot {
+    display: flex;
+    @include sp {
+      flex-direction: column;
+    }
+    &-left {
+      padding: 0 0 40px;
+      width: 50%;
+      border: 1px solid #000;
+      border-top: none;
+      @include sp {
+        width: 100%;
+      }
+    }
+    &-ttl {
+      margin: 41px 0 0;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      text-align: center;
+      color: #c68f4b;
+    }
+    &-desc {
+      margin: 32px 0 0;
+      padding: 0 22px 0 22px;
+      line-height: 2;
+      letter-spacing: 0.05em;
+    }
+    &-graph {
+      margin: 0 auto;
+      @include sp {
+        margin: 20px auto;
+      }
+      &01 {
+        width: 515px;
+        @include sp {
+          width: 90%;
+        }
+      }
+      &02 {
+        margin: 27px auto 0;
+        width: 527px;
+        @include sp {
+          width: 90%;
+        }
+      }
+    }
+    &-right {
+      width: 50%;
+      border: 1px solid #000;
+      border-top: none;
+      border-left: none;
+      @include sp {
+        padding: 0 0 40px 0;
+        width: 100%;
+        border: 1px solid #000;
+        border-top: none;
+      }
+      .concept-detail__foot__txt {
+        display: flex;
+        @include sp {
+          flex-direction: column;
+        }
+      }
+    }
+    &-logo {
+      margin: 40px auto 0;
+      width: 414px;
+      @include sp {
+        width: 90%;
+      }
+    }
+  }
+}
+.page-ttl {
+  ruby[data-ruby] {
+    &:before {
+      left: 100px;
+      bottom: -40px;
+      @include sp {
+        bottom: -20px;
+        left: 55px;
+      }
+    }
+  }
+}

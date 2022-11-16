@@ -1,0 +1,96 @@
+.access {
+  background: url(../images/webp/access_map-pc.webp) no-repeat 25% 50% / cover;
+  padding: 80px 40px;
+  height: 740px;
+  @include sp {
+    background: none;
+    padding: 0;
+  }
+  &__bg {
+    @include sp {
+      background: url(../images/webp/access_map-pc.webp) no-repeat 30% 10% /
+        cover;
+      height: 400px;
+    }
+  }
+  .sec-ttl {
+    text-align: center;
+  }
+  &__inner {
+    position: relative;
+    padding: 0;
+  }
+  &__item {
+    position: absolute;
+    right: 0;
+    padding: 60px 60px 80px;
+    width: 600px;
+    background: #fff;
+    @include sp {
+      position: relative;
+      padding: 40px 0;
+      width: 100%;
+    }
+    &-txt {
+      margin: 80px 0 0;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      @include sp {
+        margin: 60px 0 0;
+        font-size: 28px;
+      }
+    }
+  }
+  &__btn {
+    display: block;
+    padding: 14px 0;
+    margin: 60px auto 0;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    position: relative;
+    border: 3px solid #000;
+    text-align: center;
+    @include sp {
+      margin: 20px 0 0;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      background: #000;
+      position: absolute;
+    }
+    &:before {
+      width: 30px;
+      top: 50%;
+      right: 40px;
+    }
+    &:after {
+      width: 10px;
+      top: 42%;
+      right: 40px;
+      transform: rotate(45deg);
+    }
+  }
+  .en {
+    position: relative;
+    letter-spacing: 0.02em;
+  }
+  ruby[data-ruby] {
+    &:before {
+      left: 45px;
+      bottom: -30px;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      @include sp {
+        left: 45px;
+        font-size: 16px;
+        letter-spacing: 0.25em;
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@import "page/header";
+@import "page/kv";
+@import "page/contact";
+@import "page/footer";
+
+.news-page {
+  .kv {
+    background: url(../images/webp/news-bg.webp) no-repeat center/cover;
+    @include sp {
+      padding: 50px 0 0;
+    }
+  }
+  .news__container {
+    background: #f7f8f8;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 80px 0 40px;
+    @include sp {
+      flex-direction: column;
+      margin: 80px 0 0;
+      padding: 0 0 80px;
+    }
+    .main-container {
+      &__list {
+        padding: 40px 40px 80px;
+        width: 65%;
+        background: #fff;
+        @include sp {
+          padding: 20px 10px;
+          width: 100%;
+        }
+        &-date,
+        &-cat,
+        &-txt {
+          display: inline-block;
+          padding: 40px 0 0;
+          font-weight: 600;
+          @include sp {
+            padding: 20px 0 0;
+          }
+        }
+        &-date {
+          margin: 0 15px 0 0;
+          width: 90px;
+          letter-spacing: 0.1em;
+        }
+        &-cat {
+          margin: 0 15px 0 0;
+          padding: 4px 0;
+          width: 90px;
+          font-size: 14px;
+          background: #f0f3f6;
+          letter-spacing: 0.05em;
+          text-align: center;
+        }
+        &-txt {
+          width: 480px;
+          letter-spacing: 0.1em;
+          @include sp {
+            width: 100%;
+          }
+        }
+      }
+      &__line {
+        margin: 40px 0 0;
+        border-color: #d9d9da;
+        @include sp {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    .side-container {
+      width: 25%;
+      @include sp {
+        margin: 40px 0 0;
+        width: 100%;
+      }
+      &-ttl {
+        font-size: 20px;
+        letter-spacing: 0.1em;
+      }
+      &__line {
+        margin: 10px 0 0;
+        border-width: 1px;
+        border-color: #000;
+      }
+      &__date {
+        padding: 20px 0 0;
+        font-weight: normal;
+      }
+      &__txt {
+        padding: 10px 0 20px;
+        font-weight: bold;
+      }
+      &__list {
+        &__line {
+          border-width: 0.5px;
+          border-color: #d9d9da;
+        }
+      }
+      &__item {
+        &:nth-child(even) {
+          margin: 100px 0 0;
+          @include sp {
+            margin: 40px 0 0;
+          }
+          .side-container__date {
+            display: inline-block;
+            margin: 0 5px 0 0;
+            font-weight: normal;
+          }
+          .side-container__txt {
+            display: inline-block;
+            width: 200px;
+            font-weight: normal;
+            @include sp {
+              width: 92%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    padding: 0 0 40px;
+    width: 65%;
+    text-align: center;
+    @include sp {
+      margin: 20px 0 0;
+      width: 100%;
+    }
+    li {
+      margin: 0 15px 0 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link,
+    &__link-prev,
+    &__link-next {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #000;
+    }
+    &__link-prev,
+    &__link-next {
+      padding: 8px 10px;
+    }
+    &__link.active {
+      background: #000;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.covid {
+  background: #ecf6f9;
+  padding: 80px 40px 100px;
+  @include sp {
+    padding: 100px 0;
+  }
+  &__inner {
+    @include sp {
+      padding: 0;
+    }
+  }
+  &__ttl {
+    padding: 16px 0;
+    background: #a4bbd4;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-align: center;
+    @include sp {
+      font-size: 20px;
+    }
+  }
+  &__lead {
+    margin: 20px auto 0;
+    width: 648px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.77;
+    text-align: center;
+    @include sp {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0;
+    @include sp {
+      flex-wrap: wrap;
+    }
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 20px 5px;
+      width: calc(100% / 6);
+      min-height: 220px;
+      background: #fff;
+      text-align: center;
+      border: 1px solid #a4bbd4;
+      @include sp {
+        width: 50%;
+      }
+      &-txt {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        @include sp {
+          font-size: 16px;
+        }
+      }
+      &-icon {
+        margin: 20px auto 0;
+      }
+      &:first-child .covid__list__item-icon {
+        width: 90px;
+      }
+      &:nth-child(2) .covid__list__item-icon {
+        width: 120px;
+      }
+      &:nth-child(3) .covid__list__item-icon,
+      &:nth-child(4) .covid__list__item-icon {
+        width: 100px;
+      }
+      &:nth-child(5) .covid__list__item-icon {
+        width: 131px;
+      }
+      &:nth-child(6) .covid__list__item-icon {
+        width: 126px;
+      }
+    }
+  }
+  &__alert {
+    &-img {
+      margin: 30px auto 0;
+      width: 980px;
+      @include sp {
+        display: none;
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: -160px 0 0 160px;
+      padding: 0 20px;
+      @include sp {
+        margin: 20px 0 0;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #a4bbd4;
+        border-radius: 10px;
+      }
+      &-txt {
+        margin: 0 20px 0 0;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.77;
+        letter-spacing: 0.1em;
+        @include sp {
+          margin: 0 10px 0 0;
+          font-size: 14px;
+          line-height: 1.4;
+          letter-spacing: 0;
+        }
+      }
+      &-icon {
+        margin: 0 10px;
+        width: 100px;
+        @include sp {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.contact {
+  background: url(../images/webp/contact_bg-pc.webp) no-repeat center/cover;
+  &__inner {
+    padding: 80px 0;
+    @include sp {
+      padding: 80px 0;
+    }
+  }
+  .sec-ttl {
+    text-align: center;
+    margin: 0 0 40px;
+    @include sp {
+      margin: 10px 0;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 80px 80px 200px;
+    background: #fff;
+    @include sp {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+    &__detail {
+      &-img {
+        display: block;
+        margin: 40px 0 0;
+        width: 500px;
+        @include sp {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__btn {
+    background: #0e9cda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    @include sp {
+      margin: 60px 0 0;
+    }
+    &-icon {
+      margin: 0 10px 5px 0;
+      width: 20px;
+    }
+    &-txt {
+      color: #fff;
+      letter-spacing: 0.1rem;
+    }
+  }
+  .en {
+    position: relative;
+    letter-spacing: 0.02em;
+  }
+  ruby[data-ruby] {
+    &:before {
+      left: 30px;
+      bottom: -30px;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      @include sp {
+        left: 40px;
+        font-size: 16px;
+        letter-spacing: 0.25em;
+      }
+    }
+  }
+}

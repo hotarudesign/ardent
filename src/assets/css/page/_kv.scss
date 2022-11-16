@@ -1,0 +1,293 @@
+.home {
+  .kv {
+    background: url(../images/webp/kv-pc.webp) no-repeat 50% 40% / cover;
+    height: 120vh;
+    position: relative;
+    @include sp {
+      background: url(../images/webp/kv-sp.webp) no-repeat 30% 100% / cover;
+      height: 120vh;
+    }
+    &__hero {
+      @include sp {
+        padding: 180px 0 0;
+        width: 100%;
+      }
+      &-logo {
+        margin: 0 0 0 65px;
+        width: 200px;
+      }
+      &-ttl {
+        margin: 100px 0 0;
+      }
+    }
+  }
+  .bar {
+    position: absolute;
+    bottom: -440px;
+    width: 100%;
+    @include sp {
+      bottom: -600px;
+    }
+  }
+  .bar01 {
+    background: url(../images/webp/kv_bg01.webp) no-repeat center/cover;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px;
+      @include sp {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+      }
+    }
+    &-lead {
+      font-size: 40px;
+      font-weight: bold;
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.2em;
+      color: #c68f4b;
+      @include sp {
+        font-size: 30px;
+      }
+    }
+    &__body {
+      @include sp {
+        margin: 20px 0 0;
+      }
+      &-ttl {
+        font-size: 48px;
+        letter-spacing: 0.15em;
+        color: #fff;
+        @include sp {
+          font-size: 32px;
+        }
+        &-span {
+          color: #e5d27f;
+          @include sp {
+            line-height: 1.4;
+          }
+        }
+      }
+      &-mini {
+        font-size: 32px;
+        @include sp {
+          font-size: 20px;
+        }
+      }
+      &-txt {
+        margin: 20px 0 0;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.05em;
+        color: #fff;
+        @include sp {
+          text-align: left;
+        }
+      }
+    }
+  }
+  .bar02 {
+    background: url(../images/webp/kv_bg02.webp) no-repeat center/cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    @include sp {
+      padding: 10px 15px 25px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 1400px;
+      @include sp {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 30px 0 0;
+      position: relative;
+      color: #fff;
+      @include sp {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        margin: 15px 0 0;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        right: -60px;
+        transform: rotate(-60deg);
+        @include sp {
+          display: none;
+        }
+      }
+      &:nth-child(odd) {
+        &:after {
+          @include sp {
+            content: "";
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            right: -26px;
+            transform: rotate(-70deg);
+          }
+        }
+      }
+      &:nth-child(even) {
+        @include sp {
+          padding: 0 0 0 15px;
+        }
+        .bar02__item-main {
+          @include sp {
+            margin: 0;
+          }
+        }
+      }
+      &:last-child {
+        margin: 0;
+        @include sp {
+          margin: 15px 0 0;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      &-main {
+        margin: 0 10px 0 0;
+        font-size: 18px;
+        line-height: 1.27;
+        letter-spacing: 0.05em;
+        @include sp {
+          font-weight: bold;
+        }
+        &-span {
+          font-weight: normal;
+          font-size: 14px;
+        }
+      }
+      &-minutes {
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        @include sp {
+          margin: 0 0 0 60px;
+        }
+        &-span {
+          font-size: 36px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .bar03 {
+    background: url(../images/webp/kv_bg03.webp) no-repeat center/cover;
+    color: #fff;
+    padding: 30px 20px;
+    @include sp {
+      padding: 30px 0;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 1400px;
+      @include sp {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    }
+    &__item {
+      position: relative;
+      text-align: center;
+      border-right: 1px solid #fff;
+      padding: 20px 35px 20px 0;
+      @include sp {
+        padding: 20px 5px;
+        width: 50%;
+        border: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+      &-txt {
+        font-size: 20px;
+        @include sp {
+          font-size: 14px;
+        }
+      }
+      &-span {
+        font-size: 32px;
+        line-height: 0.5;
+        @include sp {
+          font-size: 24px;
+          line-height: 1.2;
+        }
+      }
+      &-mini {
+        margin: -10px 0 0;
+        text-align: right;
+        font-size: 12px;
+        @include sp {
+          margin: 2px 0 0;
+        }
+      }
+      .pet {
+        margin: -14px 0 0;
+        line-height: 0;
+        @include sp {
+          margin: -10px 0 0;
+        }
+      }
+    }
+  }
+}
+.page-ttl {
+  padding: 100px 0 140px;
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: center;
+  ruby-position: under;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック",
+    "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  @include sp {
+    padding: 40px 0 50px;
+    font-size: 40px;
+  }
+  ruby[data-ruby] {
+    position: relative;
+    &:before {
+      content: attr(data-ruby);
+      position: absolute;
+      left: 50px;
+      bottom: -40px;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      font-family: "Noto Serif JP", serif;
+      @include sp {
+        bottom: -20px;
+        left: 25px;
+        font-size: 16px;
+      }
+    }
+  }
+}

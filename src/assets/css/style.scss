@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+$sp: 500px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@import "base/common.css";
+@import "page/header";
+@import "page/kv";
+@import "page/info";
+@import "page/concept";
+@import "page/location";
+@import "page/room";
+@import "page/equipment";
+@import "page/performance";
+@import "page/overview";
+@import "page/access";
+@import "page/covid";
+@import "page/contact";
+@import "page/footer";
