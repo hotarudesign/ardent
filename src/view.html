@@ -22,378 +22,698 @@
     <link rel="stylesheet" href="./assets/css/base/reset.css" />
     <link rel="stylesheet" href="./assets/css/base/common.css" />
     <link rel="stylesheet" href="./assets/css/view.css" />
-    <title>周辺環境│アーデント彦島福浦 | 下関市彦島福浦の新築分譲マンション</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <title>
+      周辺環境│アーデント彦島福浦 | 下関市彦島福浦の新築分譲マンション
+    </title>
   </head>
   <body class="view-page">
     <header class="header">
       <div class="header__inner inner">
-          <div class="header__container">
-            <h1 class="header__logo logo">
-              <a href="./index.html"
-                ><img
-                  src="./assets/images/webp/logo.webp"
-                  alt="アーデント彦島福浦"
-              /></a>
-            </h1>
-            <a href="./contact.html" class="header__btn btn">
-              <div class="header__btn-icon">
-                <img
-                  src="./assets/images/webp/contact_icon.webp"
-                  alt="お問い合わせ・資料請求"
-                />
-              </div>
-              <p class="header__btn-txt">お問い合わせ・資料請求</p>
-            </a>
-          </div>
-          <div id="js-btn"><span></span><span></span><span></span></div>
-          <nav id="js-nav" class="g-nav">
-            <ul class="g-nav__list">
-              <li class="g-nav__list__item">
-                <a href="./index.html">
-                  <ruby class="en" data-ruby="ホーム">HOME</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item">
-                <a href="./concept.html">
-                  <ruby class="en"  data-ruby="コンセプト">CONCEPT</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item">
-                <a href="./view.html">
-                  <ruby class="en" data-ruby="周辺環境">VIEW
-                </a>
-              </li>
-              <li class="g-nav__list__item modal">
-                <a>
-                <!-- <a href="#room"> -->
-                  <ruby class="en" data-ruby="間取り">PLAN</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item modal">
-                <a>
-                  <ruby class="en" data-ruby="モデルルーム">MODEL ROOM</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item modal">
-                <a>
-                <!-- <a href="#equipment"> -->
-                  <ruby class="en" data-ruby="仕様・設備">EQUIPMENT</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item">
-                <a href="./overview.html">
-                  <ruby class="en" data-ruby="物件概要">OVERVIEW</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item modal">
-                <a>
-                  <ruby class="en" data-ruby="アフターサービス">AFTER SERVICE</ruby>
-                </a>
-              </li>
-              <li class="g-nav__list__item modal">
-                <a>
-                <!-- <a href="#performance"> -->
-                  <ruby class="en" data-ruby="アーデントシリーズ実績">PERFORMANCE</ruby>
-                </a>
-              </li>
-            </ul>
-            <a href="./contact.html" class="g-nav__btn btn sp-only">
-              <div class="g-nav__btn-icon">
-                <img
-                  src="./assets/images/webp/contact_icon.webp"
-                  alt="お問い合わせ・資料請求"
-                />
-              </div>
-              <p class="g-nav__btn-txt">お問い合わせ・資料請求</p>
-            </a>
-          </nav>
-        </div>
-        <div class="modalbox" id="modalbox">
-          <p class="modalbox__txt">準備中です。</p>
-        </div>
-    </header>
-    <div class="kv">
-        <h2 class="page-ttl"><ruby data-ruby="周辺環境">VIEW</ruby></h2>
-    </div>
-    <main class="view__container">
-        <div class="pankuzu">
-          <a href="./index.html" class="pankuzu-prev">HOME</a>
-          <p class="pankuzu-current">周辺環境</p>
-        </div>
-        <section class="view" id="view">
-          <div class="inner">
-              <h2 class="view__ttl">いつでも等身大で、<br class="sp-only">心のままに。<br>のびやかな家族時間を。</h2>
-          </div>
-        </section>
-        <section class="view-visual">
-            <div class="inner">
-                <h2 class="view-visual__txt">
-                    1フロア4邸、全40戸。<br>程よい距離感が好ましく感じられる時代だからこそ、<br class="pc-only">自分らしさと向き合えるわが家で、<br class="pc-only">家族と過ごす時間が愛しくなる。<br class="pc-only">南面バルコニーからのひらけた眺望が、<br class="pc-only">のびやかで心豊かな日々を予感させてくれます。<br>
-                </h2>
-                <figure class="view-visual__thumb view-visual__thumb01">
-                    <img src="./assets/images/webp/location_thumb.webp" alt="">
-                </figure>
-                <figure class="view-visual__thumb view-visual__thumb02">
-                    <img src="./assets/images/webp/equipment_thumb.webp" alt="">
-                </figure>
-                <figure class="view-visual__thumb view-visual__thumb03">
-                    <img src="./assets/images/webp/performance_thumb.webp" alt="">
-                </figure>
-                <figure class="view-visual__thumb view-visual__thumb04">
-                    <img src="./assets/images/webp/room_thumb.webp" alt="">
-                </figure>
-                <figure class="view-visual__illust">
-                    <img src="./assets/images/webp/view-page_illust.webp" alt="">
-                </figure>
-            </div>
-        </section>
-        <section class="view-panorama">
-            <div class="inner">
-                <h2 class="view-panorama__ttl">海へまちへ、<br class="sp-only">ゆるやかに人々を誘う彦島パノラマ。</h2>
-            </div>
-            <figure class="view-panorama__aerial">
-                <img src="./assets/images/webp/view-page_aerial.webp" alt="">
-            </figure>
-        </section>
-        <section class="view-life">
-            <h2 class="view-life__ttl">毎日にゆとりが生まれる、車で5分圏内の快適生活。</h2>
-            <div class="view-life__container">
-                <figure class="view-life__left">
-                    <img src="./assets/images/webp/view-page_thum01.webp" alt="">
-                    <figcaption class="view-life__left-caption">アルク彦島店</figcaption>
-                </figure>
-                <figure class="view-life__center">
-                    <img src="./assets/images/webp/view-page_thum02.webp" alt="">
-                    <figcaption class="view-life__center-caption">ダイレックス彦島店</figcaption>
-                </figure>
-                <div class="view-life__right">
-                    <figure class="view-life__right__figure">
-                        <img src="./assets/images/webp/view-page_thum03.webp" alt="">
-                        <figcaption class="view-life__right-caption">セブンイレブン下関彦島福浦店</figcaption>
-                    </figure>
-                    <figure class="view-life__right__figure">
-                        <img src="./assets/images/webp/view-page_thum04.webp" alt="">
-                        <figcaption class="view-life__right-caption">サンキュードラッグ彦島中央薬局</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <section class="life-info">
-            <div class="inner">
-                <h2 class="sec-ttl">LIFE INFOMATION</h2>
-                <div class="life-info__container">
-                    <div class="life-info__container__left">
-                        <dl class="life-info__list">
-                            <dt class="life-info__list__ttl">■ショッピング・商業施設</dt>
-                            <dd class="life-info__list__desc life-info__list__place">アルク彦島店</dd>
-                            <dd class="life-info__list__desc">徒歩 1分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約80m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">ウォッシュハウス下関彦島</dd>
-                            <dd class="life-info__list__desc">徒歩 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約200m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">セブンイレブン下関彦島福浦店</dd>
-                            <dd class="life-info__list__desc">徒歩 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約210m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">ジュンテンドー彦島店</dd>
-                            <dd class="life-info__list__desc">徒歩 4分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約280m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">ダイレックス彦島店</dd>
-                            <dd class="life-info__list__desc">車で 4分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約820m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">サンキュードラッグ彦島中央薬局</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1000m</dd>
-                        </dl>
-                        <dl class="life-info__list">
-                            <dt class="life-info__list__ttl">■交通機関</dt>
-                            <dd class="life-info__list__desc life-info__list__place">サンデン交通福浦口バス停</dd>
-                            <dd class="life-info__list__desc">徒歩 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約240m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">JR下関駅</dd>
-                            <dd class="life-info__list__desc">車で 5分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約3100m</dd>
-                        </dl>
-                        <dl class="life-info__list">
-                            <dt class="life-info__list__ttl">■金融機関</dt>
-                            <dd class="life-info__list__desc life-info__list__place">山口銀行 福浦支店</dd>
-                            <dd class="life-info__list__desc">徒歩 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約180m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">西中国信用金庫 福浦支店</dd>
-                            <dd class="life-info__list__desc">徒歩 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約240m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">下関福浦郵便局</dd>
-                            <dd class="life-info__list__desc">徒歩 7分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約500m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">西京銀行 彦島支店</dd>
-                            <dd class="life-info__list__desc">車で 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約2400m</dd>
-                        </dl>
-                        
-                    </div>
-                    <div class="life-info__container__right">
-                        <dl class="life-info__list">
-                            <dt class="life-info__list__ttl">■医療機関</dt>
-                            <dd class="life-info__list__desc life-info__list__place">下田整形外科・おおにし歯科</dd>
-                            <dd class="life-info__list__desc">徒歩 5分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約350m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">園田内科胃腸科医院</dd>
-                            <dd class="life-info__list__desc">徒歩 6分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約450m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">しみず耳鼻咽喉科クリニック</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1100m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">ひこしまこどもクリニック</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1100m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">安藤内科</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1100m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">とね眼科クリニック</dd>
-                            <dd class="life-info__list__desc">車で 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1400m</dd>
-                        </dl>
-                        <dl class="life-info__list">
-                            <dt class="life-info__list__ttl">■教育機関</dt>
-                            <dd class="life-info__list__desc life-info__list__place">彦島第一保育園</dd>
-                            <dd class="life-info__list__desc">徒歩 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約130m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">聖母園</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約850m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">角倉小学校</dd>
-                            <dd class="life-info__list__desc">徒歩10分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約800m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">彦島中学校</dd>
-                            <dd class="life-info__list__desc">徒歩 8分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約600m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">安藤内科</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1100m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">県立下関中等教育学校</dd>
-                            <dd class="life-info__list__desc">徒歩34分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約2700m</dd>
-                        </dl>
-                        <dl class="life-info__list">
-                            <dt class="life-info__list__ttl">■公共施設</dt>
-                            <dd class="life-info__list__desc life-info__list__place">彦島図書館</dd>
-                            <dd class="life-info__list__desc">車で 2分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1200m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">彦島保健センター</dd>
-                            <dd class="life-info__list__desc">車で 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1300m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">彦島支所</dd>
-                            <dd class="life-info__list__desc">車で 3分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約1400m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">塩谷公園</dd>
-                            <dd class="life-info__list__desc">徒歩 5分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約400m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">老の山公園</dd>
-                            <dd class="life-info__list__desc">車で 5分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約2800m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">彦島八幡宮</dd>
-                            <dd class="life-info__list__desc">車で 5分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約2900m</dd>
-                            <dd class="life-info__list__desc life-info__list__place">ひこっとらんどマリンビーチ</dd>
-                            <dd class="life-info__list__desc">車で 6分</dd>
-                            <dd class="life-info__list__desc life-info__list__distance">約3600m</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="view-access">
-            <h2 class="sec-ttl">アクセス</h2>
-            <figure class="view-access__map">
-                <img src="./assets/images/webp/view-page_map.webp" alt="">
-            </figure>
-            <a href="https://goo.gl/maps/8PwiEz5vVi7deaiw9" class="view-access__btn">Google Mapへ</a>
-        </section>
-    </main>
-    <section class="contact">
-    <div class="contact__inner inner">
-        <div class="contact__item">
-        <h2 class="sec-ttl">
-            <ruby class="en" data-ruby="お問い合わせ">CONTACT</ruby>
-        </h2>
-        <div class="contact__item__detail">
-            <a href="./contact.html" class="contact__btn btn">
-            <div class="contact__btn-icon">
-                <img
+        <div class="header__container">
+          <h1 class="header__logo logo">
+            <a href="./index.html"
+              ><img
+                src="./assets/images/webp/logo.webp"
+                alt="アーデント彦島福浦"
+            /></a>
+          </h1>
+          <a href="./contact.html" class="header__btn btn">
+            <div class="header__btn-icon">
+              <img
                 src="./assets/images/webp/contact_icon.webp"
                 alt="お問い合わせ・資料請求"
-                />
+              />
             </div>
-            <p class="contact__btn-txt">お問い合わせ・資料請求</p>
+            <p class="header__btn-txt">お問い合わせ・資料請求</p>
+          </a>
+        </div>
+        <div id="js-btn"><span></span><span></span><span></span></div>
+        <nav id="js-nav" class="g-nav">
+          <ul class="g-nav__list">
+            <li class="g-nav__list__item">
+              <a href="./index.html">
+                <ruby class="en" data-ruby="ホーム">HOME</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item">
+              <a href="./concept.html">
+                <ruby class="en"  data-ruby="コンセプト">CONCEPT</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item is-active">
+              <a href="./view.html">
+                <ruby class="en" data-ruby="周辺環境">VIEW
+              </a>
+            </li>
+            <li class="g-nav__list__item modal">
+              <a>
+              <!-- <a href="./plan.html"> -->
+                <ruby class="en" data-ruby="間取り">PLAN</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item modal">
+              <a>
+              <!-- <a href="./modelroom.html"> -->
+                <ruby class="en" data-ruby="モデルルーム">MODEL ROOM</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item modal">
+              <a>
+              <!-- <a href="./equipment.html"> -->
+                <ruby class="en" data-ruby="仕様・設備">EQUIPMENT</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item">
+              <a href="./overview.html">
+                <ruby class="en" data-ruby="物件概要">OVERVIEW</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item modal">
+              <a>
+              <!-- <a href="./afterservice.html"> -->
+                <ruby class="en" data-ruby="アフターサービス">AFTER SERVICE</ruby>
+              </a>
+            </li>
+            <li class="g-nav__list__item modal">
+              <a>
+              <!-- <a href="./performance.html"> -->
+                <ruby class="en" data-ruby="アーデントシリーズ実績">PERFORMANCE</ruby>
+              </a>
+            </li>
+          </ul>
+          <a href="./contact.html" class="g-nav__btn btn sp-only">
+            <div class="g-nav__btn-icon">
+              <img
+                src="./assets/images/webp/contact_icon.webp"
+                alt="お問い合わせ・資料請求"
+              />
+            </div>
+            <p class="g-nav__btn-txt">お問い合わせ・資料請求</p>
+          </a>
+        </nav>
+      </div>
+      <div class="modalbox" id="modalbox">
+        <p class="modalbox__txt">準備中です。</p>
+      </div>
+    </header>
+    <div class="kv">
+      <h2 class="page-ttl"><ruby data-ruby="周辺環境">VIEW</ruby></h2>
+    </div>
+    <main class="view__container">
+      <div class="pankuzu">
+        <a href="./index.html" class="pankuzu-prev">HOME</a>
+        <p class="pankuzu-current">周辺環境</p>
+      </div>
+      <section class="view" id="view">
+        <div class="inner">
+          <h2 class="view__ttl">
+            いつでも等身大で、<br
+              class="sp-only"
+            />心のままに。<br />のびやかな家族時間を。
+          </h2>
+        </div>
+      </section>
+      <section class="view-visual">
+        <div class="inner">
+          <h2 class="view-visual__txt">
+            1フロア4邸、全40戸。<br />程よい距離感が好ましく感じられる時代だからこそ、<br
+              class="pc-only"
+            />自分らしさと向き合えるわが家で、<br
+              class="pc-only"
+            />家族と過ごす時間が愛しくなる。<br
+              class="pc-only"
+            />南面バルコニーからのひらけた眺望が、<br
+              class="pc-only"
+            />のびやかで心豊かな日々を予感させてくれます。<br />
+          </h2>
+          <figure class="view-visual__thumb view-visual__thumb01">
+            <img src="./assets/images/webp/location_thumb.webp" alt="" />
+          </figure>
+          <figure class="view-visual__thumb view-visual__thumb02">
+            <img src="./assets/images/webp/equipment_thumb.webp" alt="" />
+          </figure>
+          <figure class="view-visual__thumb view-visual__thumb03">
+            <img src="./assets/images/webp/performance_thumb.webp" alt="" />
+          </figure>
+          <figure class="view-visual__thumb view-visual__thumb04">
+            <img src="./assets/images/webp/room_thumb.webp" alt="" />
+          </figure>
+          <figure class="view-visual__illust">
+            <img src="./assets/images/webp/view-page_illust.webp" alt="" />
+          </figure>
+        </div>
+      </section>
+      <section class="view-panorama">
+        <div class="inner">
+          <h2 class="view-panorama__ttl">
+            海へまちへ、<br class="sp-only" />ゆるやかに人々を誘う彦島パノラマ。
+          </h2>
+        </div>
+        <figure class="view-panorama__aerial">
+          <img src="./assets/images/webp/view-page_aerial.webp" alt="" />
+        </figure>
+      </section>
+      <section class="view-life">
+        <h2 class="view-life__ttl">
+          毎日にゆとりが生まれる、車で5分圏内の快適生活。
+        </h2>
+        <div class="view-life__container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide01">
+                <figure class="view-life__left">
+                  <img src="./assets/images/webp/view-page_thum01.webp" alt="" />
+                  <figcaption class="view-life__left-caption">
+                    アルク彦島店
+                  </figcaption>
+                </figure>
+                <figure class="view-life__center pc-only">
+                  <img src="./assets/images/webp/view-page_thum02.webp" alt="" />
+                  <figcaption class="view-life__center-caption">
+                    ダイレックス彦島店
+                  </figcaption>
+                </figure>
+                <div class="view-life__right pc-only">
+                  <figure class="view-life__right__figure pc-only">
+                    <img src="./assets/images/webp/view-page_thum03.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      セブンイレブン下関彦島福浦店
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure pc-only">
+                    <img src="./assets/images/webp/view-page_thum04.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      サンキュードラッグ彦島中央薬局
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide__sp-column sp-only">
+                  <figure class="view-life__center">
+                    <img src="./assets/images/webp/view-page_thum02.webp" alt="" />
+                    <figcaption class="view-life__center-caption">
+                      ダイレックス彦島店
+                    </figcaption>
+                  </figure>
+                  <div class="view-life__right">
+                    <figure class="view-life__right__figure">
+                      <img src="./assets/images/webp/view-page_thum03.webp" alt="" />
+                      <figcaption class="view-life__right-caption">
+                        セブンイレブン下関彦島福浦店
+                      </figcaption>
+                    </figure>
+                    <figure class="view-life__right__figure">
+                      <img src="./assets/images/webp/view-page_thum04.webp" alt="" />
+                      <figcaption class="view-life__right-caption">
+                        サンキュードラッグ彦島中央薬局
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide02">
+                <figure class="view-life__left">
+                  <img src="./assets/images/webp/view-page_02_item01.webp" alt="" />
+                  <figcaption class="view-life__left-caption">
+                    JR下関駅
+                  </figcaption>
+                </figure>
+                <div class="view-life__right">
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_02_item02.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      下田整形外科・おおにし歯科
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_02_item03.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      園田内科胃腸科医院
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_02_item04.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      山口銀行 福浦支店
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_02_item05.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      西中国信用金庫 福浦支店
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide03">
+                <figure class="view-life__left">
+                  <img src="./assets/images/webp/view-page_03_item01.webp" alt="" />
+                  <figcaption class="view-life__left-caption">
+                    県立下関中等教育学校
+                  </figcaption>
+                </figure>
+                <div class="view-life__right">
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_03_item02.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      彦島第一保育園
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_03_item03.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      聖母園
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_03_item04.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      彦島中学校
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_03_item05.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      角倉小学校
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide04">
+                <figure class="view-life__left">
+                  <img src="./assets/images/webp/view-page_04_item01.webp" alt="" />
+                  <figcaption class="view-life__left-caption">
+                    老の山公園
+                  </figcaption>
+                </figure>
+                <div class="view-life__right">
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_04_item02.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      彦島図書館
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_04_item03.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      ひこっとらんどマリンビーチ
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_04_item04.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      彦島支所
+                    </figcaption>
+                  </figure>
+                  <figure class="view-life__right__figure">
+                    <img src="./assets/images/webp/view-page_04_item05.webp" alt="" />
+                    <figcaption class="view-life__right-caption">
+                      彦島保健センター
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="life-info">
+        <div class="inner">
+          <h2 class="sec-ttl">LIFE INFOMATION</h2>
+          <div class="life-info__container">
+            <div class="life-info__container__left">
+              <dl class="life-info__list">
+                <dt class="life-info__list__ttl">■ショッピング・商業施設</dt>
+                <dd class="life-info__list__desc life-info__list__place">
+                  アルク彦島店
+                </dd>
+                <dd class="life-info__list__desc">徒歩 1分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約80m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  ウォッシュハウス下関彦島
+                </dd>
+                <dd class="life-info__list__desc">徒歩 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約200m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  セブンイレブン下関彦島福浦店
+                </dd>
+                <dd class="life-info__list__desc">徒歩 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約210m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  ジュンテンドー彦島店
+                </dd>
+                <dd class="life-info__list__desc">徒歩 4分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約280m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  ダイレックス彦島店
+                </dd>
+                <dd class="life-info__list__desc">車で 4分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約820m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  サンキュードラッグ彦島中央薬局
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1000m
+                </dd>
+              </dl>
+              <dl class="life-info__list">
+                <dt class="life-info__list__ttl">■交通機関</dt>
+                <dd class="life-info__list__desc life-info__list__place">
+                  サンデン交通福浦口バス停
+                </dd>
+                <dd class="life-info__list__desc">徒歩 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約240m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  JR下関駅
+                </dd>
+                <dd class="life-info__list__desc">車で 5分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約3100m
+                </dd>
+              </dl>
+              <dl class="life-info__list">
+                <dt class="life-info__list__ttl">■金融機関</dt>
+                <dd class="life-info__list__desc life-info__list__place">
+                  山口銀行 福浦支店
+                </dd>
+                <dd class="life-info__list__desc">徒歩 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約180m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  西中国信用金庫 福浦支店
+                </dd>
+                <dd class="life-info__list__desc">徒歩 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約240m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  下関福浦郵便局
+                </dd>
+                <dd class="life-info__list__desc">徒歩 7分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約500m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  西京銀行 彦島支店
+                </dd>
+                <dd class="life-info__list__desc">車で 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約2400m
+                </dd>
+              </dl>
+            </div>
+            <div class="life-info__container__right">
+              <dl class="life-info__list">
+                <dt class="life-info__list__ttl">■医療機関</dt>
+                <dd class="life-info__list__desc life-info__list__place">
+                  下田整形外科・おおにし歯科
+                </dd>
+                <dd class="life-info__list__desc">徒歩 5分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約350m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  園田内科胃腸科医院
+                </dd>
+                <dd class="life-info__list__desc">徒歩 6分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約450m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  しみず耳鼻咽喉科クリニック
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1100m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  ひこしまこどもクリニック
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1100m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  安藤内科
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1100m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  とね眼科クリニック
+                </dd>
+                <dd class="life-info__list__desc">車で 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1400m
+                </dd>
+              </dl>
+              <dl class="life-info__list">
+                <dt class="life-info__list__ttl">■教育機関</dt>
+                <dd class="life-info__list__desc life-info__list__place">
+                  彦島第一保育園
+                </dd>
+                <dd class="life-info__list__desc">徒歩 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約130m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  聖母園
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約850m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  角倉小学校
+                </dd>
+                <dd class="life-info__list__desc">徒歩10分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約800m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  彦島中学校
+                </dd>
+                <dd class="life-info__list__desc">徒歩 8分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約600m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  安藤内科
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1100m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  県立下関中等教育学校
+                </dd>
+                <dd class="life-info__list__desc">徒歩34分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約2700m
+                </dd>
+              </dl>
+              <dl class="life-info__list">
+                <dt class="life-info__list__ttl">■公共施設</dt>
+                <dd class="life-info__list__desc life-info__list__place">
+                  彦島図書館
+                </dd>
+                <dd class="life-info__list__desc">車で 2分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1200m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  彦島保健センター
+                </dd>
+                <dd class="life-info__list__desc">車で 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1300m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  彦島支所
+                </dd>
+                <dd class="life-info__list__desc">車で 3分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約1400m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  塩谷公園
+                </dd>
+                <dd class="life-info__list__desc">徒歩 5分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約400m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  老の山公園
+                </dd>
+                <dd class="life-info__list__desc">車で 5分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約2800m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  彦島八幡宮
+                </dd>
+                <dd class="life-info__list__desc">車で 5分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約2900m
+                </dd>
+                <dd class="life-info__list__desc life-info__list__place">
+                  ひこっとらんどマリンビーチ
+                </dd>
+                <dd class="life-info__list__desc">車で 6分</dd>
+                <dd class="life-info__list__desc life-info__list__distance">
+                  約3600m
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="view-access">
+        <h2 class="sec-ttl">アクセス</h2>
+        <figure class="view-access__map">
+          <img src="./assets/images/webp/view-page_map.webp" alt="" />
+        </figure>
+        <a href="https://goo.gl/maps/8PwiEz5vVi7deaiw9" class="view-access__btn"
+          >Google Mapへ</a
+        >
+      </section>
+    </main>
+    <section class="contact">
+      <div class="contact__inner inner">
+        <div class="contact__item">
+          <h2 class="sec-ttl">
+            <ruby class="en" data-ruby="お問い合わせ">CONTACT</ruby>
+          </h2>
+          <div class="contact__item__detail">
+            <a href="./contact.html" class="contact__btn btn">
+              <div class="contact__btn-icon">
+                <img
+                  src="./assets/images/webp/contact_icon.webp"
+                  alt="お問い合わせ・資料請求"
+                />
+              </div>
+              <p class="contact__btn-txt">お問い合わせ・資料請求</p>
             </a>
             <a href="tel:0120-353-171" class="contact__item__detail-img">
-            <img src="./assets/images/webp/contact_detail.webp" alt="0120-353-171" />
+              <img
+                src="./assets/images/webp/contact_detail.webp"
+                alt="0120-353-171"
+              />
             </a>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </section>
     <footer class="footer">
-    <div class="inner footer__inner">
+      <div class="inner footer__inner">
         <ul class="footer__company">
           <li class="footer__company__item">
             <p class="footer__company__item-txt">事業主・売主</p>
-            <img src="./assets/images/webp/footer_logo01.webp" alt="株式会社アカマツ興産" />
+            <img
+              src="./assets/images/webp/footer_logo01.webp"
+              alt="株式会社アカマツ興産"
+            />
           </li>
           <li class="footer__company__item">
-              <p class="footer__company__item-txt">施工</p>
-              <img src="./assets/images/webp/footer_logo02.webp" alt="株式会社野口工務店" />
+            <p class="footer__company__item-txt">施工</p>
+            <img
+              src="./assets/images/webp/footer_logo02.webp"
+              alt="株式会社野口工務店"
+            />
           </li>
           <li class="footer__company__item">
-              <p class="footer__company__item-txt">販売代理</p>
-              <img src="./assets/images/webp/footer_logo03.webp" alt="株式会社コムズコーポレーション" />
+            <p class="footer__company__item-txt">販売代理</p>
+            <img
+              src="./assets/images/webp/footer_logo03.webp"
+              alt="株式会社コムズコーポレーション"
+            />
           </li>
         </ul>
         <hr class="footer__line" />
         <ul class="footer__list">
-        <li class="footer__list__item">
+          <li class="footer__list__item">
             <a href="./index.html">ホーム</a>
-        </li>
-        <li class="footer__list__item">
+          </li>
+          <li class="footer__list__item">
             <a href="./concept.html">コンセプト</a>
-        </li>
-        <li class="footer__list__item">
+          </li>
+          <li class="footer__list__item">
             <a href="./view.html">周辺整備</a>
-        </li>
-        <li class="footer__list__item footer__modal">
-            <a>モデルルーム</a>
-        </li>
-        <li class="footer__list__item footer__modal">
-            <a>間取り</a>
-        </li>
-        <li class="footer__list__item footer__modal">
-            <a>仕様・設備</a>
-        </li>
-        <li class="footer__list__item">
-            <a href="./overview.html">物件概要</a>
-        </li>
-        <li class="footer__list__item footer__modal">
-            <a>アフターサービス</a>
-        </li>
-        <li class="footer__list__item footer__modal">
-            <a>アーデントシリーズ実績</a>
-        </li>
-        <li class="footer__list__item footer__modal">
-            <a>プライバシーポリシー</a>
-        </li>
+          </li>
+          <li class="footer__list__item footer__modal">
+            <a>
+            <!-- <a href="./modelroom.html"> -->
+              モデルルーム
+            </a>
+          </li>
+          <li class="footer__list__item footer__modal">
+            <a>
+            <!-- <a href="./plan.html"> -->
+              間取り
+            </a>
+          </li>
+          <li class="footer__list__item footer__modal">
+            <a>
+            <!-- <a href="./equipment.html"> -->
+              仕様・設備
+            </a>
+          </li>
+          <li class="footer__list__item">
+              <a href="./overview.html">物件概要</a>
+          </li>
+          <li class="footer__list__item footer__modal">
+            <a>
+            <!-- <a href="./afterservice.html"> -->
+              アフターサービス
+            </a>
+          </li>
+          <li class="footer__list__item footer__modal">
+            <a>
+            <!-- <a href="./performance.html"> -->
+              アーデントシリーズ実績
+            </a>
+          </li>
+          <li class="footer__list__item footer__modal">
+              <a>プライバシーポリシー</a>
+          </li>
         </ul>
         <div class="footer__modalbox" id="footer__modalbox">
-        <p class="footer__modalbox__txt">準備中です。</p>
+          <p class="footer__modalbox__txt">準備中です。</p>
         </div>
         <p class="copyright">
-        <small
+          <small
             >Copyright &copy; 株式会社アカマツ興産 All rights reserved.</small
-        >
+          >
         </p>
-    </div>
-    <div class="page-top">
-        <img src="./assets/images/webp/page-top.webp" alt="">
-    </div>
+      </div>
+      <div class="page-top">
+        <img src="./assets/images/webp/page-top.webp" alt="" />
+      </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/smoothscroll.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>

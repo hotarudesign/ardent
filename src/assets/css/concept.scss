@@ -179,7 +179,7 @@
 }
 .concept-detail {
   .inner {
-    padding: 120px 0;
+    padding: 120px 40px;
   }
   &__ttl {
     font-weight: 700;
@@ -227,7 +227,7 @@
         margin: 41px 0 0;
         font-weight: 700;
         font-size: 20px;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
         text-align: center;
         color: #c68f4b;
         @include sp {

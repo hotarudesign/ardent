@@ -1,0 +1,168 @@
+@import "page/header";
+@import "page/kv";
+@import "page/contact";
+@import "page/footer";
+
+.model-room-page {
+  .kv {
+    background: url(../../assets/images/webp/modelroom-page_kv.webp) no-repeat
+      center/cover;
+    @include sp {
+      padding: 50px 0 0;
+    }
+    .page-ttl {
+      ruby[data-ruby] {
+        &:before {
+          left: 160px;
+          bottom: -40px;
+          @include sp {
+            bottom: -20px;
+            left: 55px;
+          }
+        }
+      }
+    }
+  }
+  .guide {
+    background: #f8f8f8;
+    &__inner {
+      padding: 120px 40px;
+      @include sp {
+        padding: 40px 5px 20px;
+      }
+    }
+    &__ttl {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 32px;
+      }
+    }
+    &__image {
+      margin: 80px 0 0;
+    }
+    &__btn {
+      display: block;
+      padding: 20px 0;
+      margin: 80px auto 0;
+      max-width: 440px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      position: relative;
+      border: 3px solid #000;
+      text-align: center;
+      @include sp {
+        margin: 40px auto 0;
+        width: 80%;
+      }
+      &:before,
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        background: #000;
+        position: absolute;
+      }
+      &:before {
+        width: 30px;
+        top: 50%;
+        right: 40px;
+      }
+      &:after {
+        width: 10px;
+        top: 42%;
+        right: 40px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .public {
+    &__inner {
+      padding: 120px 40px;
+      @include sp {
+        padding: 40px 5px 20px;
+      }
+    }
+    &__ttl {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 32px;
+      }
+    }
+    &__lead {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 2.3;
+      letter-spacing: 0.2em;
+      text-align: center;
+      color: #c68f4b;
+    }
+    &__vertual {
+      margin: 40px 0 0;
+      border: 1px solid #dcdee0;
+    }
+    &__note {
+      margin: 33px 0 0;
+      line-height: 2;
+      letter-spacing: 0.05em;
+      text-align: right;
+    }
+  }
+  .access {
+    padding: 120px 0;
+    background: #f8f8f8;
+    text-align: center;
+    @include sp {
+      padding: 60px 0;
+    }
+    &__map {
+      margin: 80px 0 0;
+      @include sp {
+        margin: 40px 0 0;
+      }
+    }
+    &__btn {
+      display: block;
+      padding: 20px 0;
+      margin: 80px auto 0;
+      max-width: 440px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      position: relative;
+      border: 3px solid #000;
+      text-align: center;
+      @include sp {
+        margin: 40px auto 0;
+        width: 80%;
+      }
+      &:before,
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        background: #000;
+        position: absolute;
+      }
+      &:before {
+        width: 30px;
+        top: 50%;
+        right: 40px;
+      }
+      &:after {
+        width: 10px;
+        top: 42%;
+        right: 40px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

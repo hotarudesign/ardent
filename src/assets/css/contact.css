@@ -41,11 +41,29 @@
 
 @media (max-width: 500px) { .g-nav__list__item { margin: 40px 0 0; } }
 
-.g-nav__list__item:after { content: ""; display: inline-block; width: 100%; height: 1.5px; position: absolute; bottom: -24px; left: 0; background: #000; transition: all 0.5s; opacity: 0; }
+.g-nav__list__item:after { content: ""; display: inline-block; width: 100%; height: 2px; position: absolute; bottom: -24px; left: 0; background: #000; transition: all 0.5s; opacity: 0; }
 
 .g-nav__list__item:hover { transition: all 0.5s; opacity: 0.7; }
 
 .g-nav__list__item:hover:after { transition: all 0.5s; opacity: 1; }
+
+.g-nav__list__item.is-active ruby[data-ruby] { position: relative; }
+
+.g-nav__list__item.is-active ruby[data-ruby]::after { content: ""; display: inline-block; width: 100%; height: 2px; position: absolute; bottom: -23.5px; left: -12%; background: #000; }
+
+.g-nav__list__item:first-child.is-active ruby[data-ruby]:after { width: 135%; left: -18%; }
+
+.g-nav__list__item:nth-child(2).is-active ruby[data-ruby]:after { width: 122%; left: -11%; }
+
+.g-nav__list__item:nth-child(3).is-active ruby[data-ruby]:after { width: 142%; left: -22%; }
+
+.g-nav__list__item:nth-child(4).is-active ruby[data-ruby]:after { width: 135%; left: -18%; }
+
+.g-nav__list__item:nth-child(5).is-active ruby[data-ruby]:after { width: 120%; left: -10%; }
+
+.g-nav__list__item:nth-child(6).is-active ruby[data-ruby]:after { width: 120%; left: 10%; }
+
+.g-nav__list__item:nth-child(7).is-active ruby[data-ruby]:after { width: 122%; left: -10%; }
 
 .g-nav__list__item::before { content: ""; display: inline-block; width: 20px; height: 1px; background: #d9d9da; position: absolute; top: 50%; right: -20px; transform: rotate(90deg); }
 
@@ -231,7 +249,7 @@ ruby[data-ruby]:before { font-size: 12px; left: 10px; bottom: -18px; letter-spac
 
 .contact { background: url(../images/webp/contact_bg-pc.webp) no-repeat center/cover; }
 
-.contact__inner { padding: 80px 0; }
+.contact__inner { padding: 80px 40px; }
 
 @media (max-width: 500px) { .contact__inner { padding: 80px 0; } }
 

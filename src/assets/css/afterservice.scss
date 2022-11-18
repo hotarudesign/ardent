@@ -1,0 +1,119 @@
+@import "page/header";
+@import "page/kv";
+@import "page/contact";
+@import "page/footer";
+
+.after-service-page {
+  .after-service__container {
+    background: #f7f8f8;
+  }
+  .pankuzu__line {
+    border-color: #d9d9da;
+  }
+  .kv {
+    background: url(../../assets/images/webp/afterservice_kv.webp) no-repeat
+      center/cover;
+    @include sp {
+      padding: 50px 0 0;
+    }
+    .page-ttl {
+      ruby[data-ruby] {
+        &:before {
+          left: 160px;
+          bottom: -40px;
+          @include sp {
+            bottom: -20px;
+            left: 55px;
+          }
+        }
+      }
+    }
+  }
+  .feature {
+    padding: 120px 40px 0;
+    text-align: center;
+    background: #f8f8f8;
+    @include sp {
+      padding: 40px 5px 20px;
+    }
+    &__ttl {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 32px;
+      }
+    }
+    &__txt {
+      margin: 80px 0 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2;
+      letter-spacing: 0.2em;
+      text-align: center;
+      @include sp {
+        font-size: 32px;
+      }
+    }
+    &__building {
+      margin: 80px -40px 0;
+    }
+  }
+  .service {
+    padding: 120px 0;
+    background: #f7f8f8;
+    &__list {
+      &__item {
+        margin: 120px 0 0;
+        &:first-child {
+          margin: 0;
+          .service__list__body {
+            &__figure {
+              width: 897px;
+            }
+            &__txt {
+              margin: 48px 0 0;
+            }
+          }
+        }
+        &:nth-child(2) {
+          .service__list__body {
+            &__figure {
+              width: 906px;
+            }
+          }
+        }
+        &:last-child {
+          .service__list__body {
+            &__figure {
+              width: 916px;
+            }
+          }
+        }
+        &__ttl {
+          font-weight: 500;
+          font-size: 32px;
+          letter-spacing: 0.1em;
+          text-align: center;
+        }
+      }
+      &__body {
+        margin: 64px 0 0;
+        padding: 80px;
+        background: #fff;
+        &__figure {
+          margin: 0 auto;
+        }
+        &__txt {
+          margin: 80px 0 0;
+          font-weight: 400;
+          line-height: 2;
+          letter-spacing: 0.075em;
+          background: #fff;
+        }
+      }
+    }
+  }
+}

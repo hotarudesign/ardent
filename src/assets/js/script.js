@@ -50,6 +50,30 @@ jsBtn.addEventListener("click", function () {
   }
 });
 
+// planタブメニュー
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    const tabs = document.getElementsByClassName("tab__ttl");
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", tabSwitch, false);
+    }
+    function tabSwitch() {
+      document
+        .getElementsByClassName("is-active")[0]
+        .classList.remove("is-active");
+      this.classList.add("is-active");
+      document.getElementsByClassName("is-show")[0].classList.remove("is-show");
+      const arrayTabs = Array.prototype.slice.call(tabs);
+      const index = arrayTabs.indexOf(this);
+      document
+        .getElementsByClassName("type__panel")
+        [index].classList.add("is-show");
+    }
+  },
+  false
+);
+
 // スムーススクロール
 // アンカーリンクスクロール
 // スマホ以外
@@ -107,3 +131,24 @@ function scrollEvent() {
     pageTopBtn.style.opacity = "0";
   }
 }
+
+// viewページスライダー
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  effect: "fade",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+  allowTouchMove: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    clickable: true,
+  },
+});

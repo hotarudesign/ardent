@@ -1,5 +1,5 @@
 .home {
-  .location {
+  .view {
     background: #f7f8f8;
     padding: 80px 40px;
     position: relative;
@@ -41,6 +41,7 @@
         width: 600px;
         @include sp {
           width: 100%;
+          text-align: center;
         }
         &-ttl {
           font-size: 40px;
@@ -114,12 +115,12 @@
     }
     ruby[data-ruby] {
       &:before {
-        left: 34px;
+        left: 5px;
         bottom: -30px;
         font-size: 20px;
         letter-spacing: 0.2em;
         @include sp {
-          left: 50px;
+          left: 14px;
           font-size: 16px;
           letter-spacing: 0.25em;
         }
