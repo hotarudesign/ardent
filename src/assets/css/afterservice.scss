@@ -23,7 +23,7 @@
           bottom: -40px;
           @include sp {
             bottom: -20px;
-            left: 55px;
+            left: 95px;
           }
         }
       }
@@ -34,7 +34,7 @@
     text-align: center;
     background: #f8f8f8;
     @include sp {
-      padding: 40px 5px 20px;
+      padding: 40px 5px 0;
     }
     &__ttl {
       font-size: 40px;
@@ -44,6 +44,7 @@
       text-align: center;
       @include sp {
         font-size: 32px;
+        text-align: center;
       }
     }
     &__txt {
@@ -54,16 +55,23 @@
       letter-spacing: 0.2em;
       text-align: center;
       @include sp {
-        font-size: 32px;
+        margin: 40px 0 0;
+        font-size: 16px;
       }
     }
     &__building {
       margin: 80px -40px 0;
+      @include sp {
+        margin: 40px -5px;
+      }
     }
   }
   .service {
     padding: 120px 0;
     background: #f7f8f8;
+    @include sp {
+      padding: 60px 0;
+    }
     &__list {
       &__item {
         margin: 120px 0 0;
@@ -72,9 +80,15 @@
           .service__list__body {
             &__figure {
               width: 897px;
+              @include sp {
+                width: 100%;
+              }
             }
             &__txt {
               margin: 48px 0 0;
+              @include sp {
+                margin: 20px 0 0;
+              }
             }
           }
         }
@@ -82,6 +96,9 @@
           .service__list__body {
             &__figure {
               width: 906px;
+              @include sp {
+                width: 100%;
+              }
             }
           }
         }
@@ -89,6 +106,9 @@
           .service__list__body {
             &__figure {
               width: 916px;
+              @include sp {
+                width: 100%;
+              }
             }
           }
         }
@@ -97,12 +117,19 @@
           font-size: 32px;
           letter-spacing: 0.1em;
           text-align: center;
+          @include sp {
+            font-size: 26px;
+          }
         }
       }
       &__body {
         margin: 64px 0 0;
         padding: 80px;
         background: #fff;
+        @include sp {
+          margin: 40px 0 0;
+          padding: 40px 5px;
+        }
         &__figure {
           margin: 0 auto;
         }
@@ -112,6 +139,9 @@
           line-height: 2;
           letter-spacing: 0.075em;
           background: #fff;
+          @include sp {
+            margin: 20px 0 0;
+          }
         }
       }
     }

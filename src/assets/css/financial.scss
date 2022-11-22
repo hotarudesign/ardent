@@ -2,3 +2,287 @@
 @import "page/kv";
 @import "page/contact";
 @import "page/footer";
+
+.financial-page {
+  .kv {
+    background: url(../../assets/images/webp/financial-page_kv.webp) no-repeat
+      center/cover;
+    @include sp {
+      padding: 50px 0 0;
+    }
+    .page-ttl {
+      ruby[data-ruby] {
+        &:before {
+          left: 270px;
+          bottom: -40px;
+          @include sp {
+            bottom: -20px;
+            left: 55px;
+          }
+        }
+      }
+      &-space {
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+  .pankuzu__line {
+    border-color: #d9d9da;
+  }
+  .financial__container {
+    background: #f7f8f8;
+    .reduction {
+      padding: 120px 0;
+      &__ttl {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.6;
+        letter-spacing: 0.2em;
+        text-align: center;
+      }
+      &__txt {
+        margin: 64px 0 0;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #c68f4b;
+      }
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 64px 0 0;
+      }
+      &__item {
+        padding: 76px 0px 78px 79px;
+        width: calc((100% - 40px) / 2);
+        background: #f6eed8;
+        &__ttl {
+          font-size: 28px;
+          letter-spacing: 0.1em;
+          color: #c68f4b;
+          &-alert {
+            color: #e00000;
+          }
+        }
+        &__txt {
+          margin: 38px 0 0;
+          width: 404px;
+          line-height: 1.75;
+          letter-spacing: 0.05em;
+        }
+      }
+      &-detail {
+        &__txt {
+          margin: 64px 0 0;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 2.44;
+          letter-spacing: 0.1em;
+          text-align: center;
+          &-alert {
+            display: inline-block;
+            font-weight: 700;
+            line-height: 1;
+            border-bottom: 8px solid #ffffcc;
+            color: #e00000;
+          }
+          &-strong {
+            font-weight: 700;
+            font-size: 32px;
+          }
+        }
+        &__container {
+          margin: 80px 0 0;
+          padding: 80px;
+          background: #fff;
+        }
+        &__block {
+          &:not(:first-child) {
+            margin: 80px 0 0;
+          }
+          &:nth-child(3) {
+            .reduction-detail__block__wrap {
+              &-thumb {
+                width: 532px;
+              }
+              &-txt {
+                letter-spacing: 0.04em;
+              }
+              &-span {
+                letter-spacing: 0em;
+              }
+            }
+          }
+          &-ttl {
+            font-size: 32px;
+            line-height: 2;
+            letter-spacing: 0.075em;
+            background: #f7f8f8;
+            text-align: center;
+          }
+          &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 40px 0 0;
+            &-figure {
+              width: 520px;
+            }
+            &-txt {
+              margin: 24px 0 0;
+              width: 482px;
+              font-weight: 500;
+              line-height: 2;
+              letter-spacing: 0em;
+            }
+          }
+          &-txt {
+            margin: 40px 0 0;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: 0.075em;
+          }
+        }
+        &__list {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin: 24px 0 0;
+        }
+        &__item {
+          margin: 40px 0 0;
+          padding: 48px;
+          width: calc((100% - 40px) / 2);
+          border: 1px solid #c68f4b;
+          &-ttl {
+            font-size: 24px;
+            letter-spacing: 0.075em;
+            text-align: center;
+            color: #c68f4b;
+          }
+          &-txt {
+            line-height: 1.75;
+            letter-spacing: 0.075em;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .assistance {
+    background: #fff;
+    &__header {
+      padding: 120px 0 64px;
+      text-align: center;
+      &-ttl {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.6;
+        letter-spacing: 0.2em;
+      }
+      &-lead {
+        margin: 64px 0 0;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        color: #c68f4b;
+      }
+      &-txt {
+        margin: 63px 0 0;
+        font-size: 18px;
+        line-height: 2.44;
+        letter-spacing: 0.1em;
+      }
+      &-midium {
+        font-size: 24px;
+      }
+      &-strong {
+        font-size: 40px;
+      }
+      &-alert {
+        display: inline-block;
+        font-weight: 700;
+        line-height: 1;
+        border-bottom: 8px solid #ffffcc;
+        color: #e00000;
+      }
+    }
+    &__inner {
+      padding: 0 40px 120px;
+    }
+    &__list {
+      padding: 80px;
+      background: #f7f8f8;
+    }
+    &__item {
+      margin: 80px 0 0;
+      &:first-child {
+        margin: 0;
+      }
+      &:last-child {
+        .assistance__item__wrap {
+          flex-direction: column;
+          &-txt {
+            width: 100%;
+          }
+        }
+      }
+      &__ttl {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 2;
+        letter-spacing: 0.1em;
+        text-align: center;
+        background: #fff;
+      }
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 0;
+        &-figure {
+          width: 520px;
+        }
+        &-txt {
+          margin: 24px 0 0;
+          width: 482px;
+          line-height: 2;
+          letter-spacing: 0.1em;
+        }
+        &-btn {
+          display: inline-block;
+          position: relative;
+          margin: 60px auto 0;
+          padding: 24px 0;
+          width: 480px;
+          font-weight: 600;
+          font-size: 18px;
+          letter-spacing: 0.05em;
+          border: 3px solid #000;
+          text-align: center;
+          &:before,
+          &:after {
+            content: "";
+            display: inline-block;
+            height: 1px;
+            background: #000;
+            position: absolute;
+          }
+          &:before {
+            width: 30px;
+            top: 50%;
+            right: 40px;
+          }
+          &:after {
+            width: 10px;
+            top: 45%;
+            right: 40px;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

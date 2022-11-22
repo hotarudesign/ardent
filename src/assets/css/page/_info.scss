@@ -1,8 +1,4 @@
 .info {
-  margin: 400px 0 0;
-  @include sp {
-    margin: 560px 0 0;
-  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -79,6 +75,7 @@
     position: relative;
     &:before {
       bottom: -20px;
+      left: 0;
       font-size: 20px;
       letter-spacing: 0.2em;
       @include sp {

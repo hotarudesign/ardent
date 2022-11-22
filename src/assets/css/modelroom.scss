@@ -17,10 +17,20 @@
           bottom: -40px;
           @include sp {
             bottom: -20px;
-            left: 55px;
+            left: 95px;
           }
         }
       }
+    }
+  }
+  .model-room__container {
+    background: #f8f8f8;
+  }
+  .pankuzu {
+    margin: 0 auto;
+    background: #f8f8f8;
+    &__line {
+      border-color: #d9d9da;
     }
   }
   .guide {
@@ -28,7 +38,7 @@
     &__inner {
       padding: 120px 40px;
       @include sp {
-        padding: 40px 5px 20px;
+        padding: 80px 5px;
       }
     }
     &__ttl {
@@ -38,11 +48,14 @@
       letter-spacing: 0.2em;
       text-align: center;
       @include sp {
-        font-size: 32px;
+        font-size: 28px;
       }
     }
     &__image {
       margin: 80px 0 0;
+      @include sp {
+        margin: 20px 0 0;
+      }
     }
     &__btn {
       display: block;
@@ -81,10 +94,11 @@
     }
   }
   .public {
+    background: #fff;
     &__inner {
       padding: 120px 40px;
       @include sp {
-        padding: 40px 5px 20px;
+        padding: 80px 5px 80px;
       }
     }
     &__ttl {
@@ -94,7 +108,7 @@
       letter-spacing: 0.2em;
       text-align: center;
       @include sp {
-        font-size: 32px;
+        font-size: 26px;
       }
     }
     &__lead {
@@ -104,6 +118,11 @@
       letter-spacing: 0.2em;
       text-align: center;
       color: #c68f4b;
+      @include sp {
+        margin: 20px 0 0;
+        font-size: 24px;
+        line-height: 1.8;
+      }
     }
     &__vertual {
       margin: 40px 0 0;
@@ -114,6 +133,9 @@
       line-height: 2;
       letter-spacing: 0.05em;
       text-align: right;
+      @include sp {
+        text-align: left;
+      }
     }
   }
   .access {

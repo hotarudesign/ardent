@@ -1,12 +1,14 @@
 .access {
-  background: url(../images/webp/access_map-pc.webp) no-repeat 25% 50% / cover;
-  padding: 80px 40px;
-  height: 740px;
+  // background: url(../images/webp/access_map-pc.webp) no-repeat 25% 50% / cover;
+  padding: 120px 0;
   @include sp {
     background: none;
-    padding: 0;
+    padding: 60px 0 80px;
+    height: auto;
   }
   &__bg {
+    background: url(../images/webp/access_map-pc.webp) no-repeat 30% 10% / cover;
+    height: 800px;
     @include sp {
       background: url(../images/webp/access_map-pc.webp) no-repeat 30% 10% /
         cover;
@@ -14,7 +16,11 @@
     }
   }
   .sec-ttl {
+    margin: 0 0 60px;
     text-align: center;
+    @include sp {
+      margin: 0 0 60px;
+    }
   }
   &__inner {
     position: relative;
@@ -47,7 +53,8 @@
   &__btn {
     display: block;
     padding: 14px 0;
-    margin: 60px auto 0;
+    margin: 80px auto 0;
+    width: 450px;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 0.05em;
@@ -55,7 +62,8 @@
     border: 3px solid #000;
     text-align: center;
     @include sp {
-      margin: 20px 0 0;
+      margin: 40px auto 0;
+      width: 80%;
     }
     &:before,
     &:after {

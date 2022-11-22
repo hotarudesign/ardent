@@ -1,0 +1,50 @@
+@charset "UTF-8";
+html { font-size: 100%; overflow-x: hidden; scroll-behavior: smooth; }
+
+img { max-width: 100%; height: auto; }
+
+body { overflow-x: hidden; font-family: "Noto Serif JP", serif; }
+
+.inner { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+
+@media (max-width: 500px) { .inner { width: 95%; padding: 0; } }
+
+.sec-ttl { font-size: 40px; font-weight: bold; }
+
+.pc-only { display: block; }
+
+@media (max-width: 500px) { .pc-only { display: none; } }
+
+.sp-only { display: none; }
+
+@media (max-width: 500px) { .sp-only { display: block; } }
+
+.en { ruby-position: under; font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+ruby[data-ruby] { position: relative; }
+
+ruby[data-ruby]:before { content: attr(data-ruby); position: absolute; font-size: 20px; letter-spacing: 0.2em; font-family: "Noto Serif JP", serif; }
+
+.pankuzu { display: flex; align-items: center; max-width: 1280px; margin: 0 auto; padding: 30px 20px; }
+
+@media (max-width: 500px) { .pankuzu { width: 100%; } }
+
+.pankuzu-prev, .pankuzu-current { margin: 0 20px; }
+
+@media (max-width: 500px) { .pankuzu-prev, .pankuzu-current { margin: 0 10px 0; } }
+
+.pankuzu-prev { font-size: 14px; letter-spacing: 0.1em; color: #999; position: relative; }
+
+@media (max-width: 500px) { .pankuzu-prev { font-size: 12px; } }
+
+.pankuzu-prev::before { content: ""; display: inline-block; width: 7px; height: 7px; border-top: 1px solid #000; border-right: 1px solid #000; position: absolute; top: 35%; right: -20px; transform: rotate(45deg); }
+
+@media (max-width: 500px) { .pankuzu-prev::before { right: -10px; } }
+
+.page-top { position: fixed; bottom: 0; right: 0; display: block; width: 72px; transition: 0.3s; opacity: 0; cursor: pointer; z-index: 99; }
+
+#footer__modalbox { display: none; }
+
+#footer__modalbox.is-active { display: block; position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); padding: 10px 100px; background: #444; color: #fff; border-radius: 5px; z-index: 20; }
+
+@media (max-width: 500px) { #footer__modalbox.is-active { bottom: 35%; padding: 10px 0; width: 100%; text-align: center; } }

@@ -17,13 +17,33 @@
           bottom: -40px;
           @include sp {
             bottom: -20px;
-            left: 55px;
+            left: 85px;
           }
         }
       }
     }
   }
+  .pankuzu__line {
+    border-color: #d9d9da;
+  }
+  .equipment__panel {
+    display: none;
+    padding: 120px 0 0;
+    @include sp {
+      padding: 80px 0 0;
+    }
+    &.is-show {
+      display: block;
+    }
+  }
+  .kitchen-space {
+    &__inner {
+    }
+  }
   .equipment {
+    &__container {
+      background: #f8f8f8;
+    }
     &-ttl {
       font-weight: bold;
       font-size: 40px;
@@ -31,22 +51,1019 @@
       letter-spacing: 0.05em;
       text-align: center;
     }
+    &-txt {
+      margin: 80px 0 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 2.44;
+      letter-spacing: 0.3em;
+      text-align: center;
+      @include sp {
+        margin: 40px 0 0;
+      }
+    }
+    &-logo {
+      margin: 80px auto 0;
+      width: 152px;
+    }
+    &-thumb {
+      margin: 64px 0 0;
+      @include sp {
+        margin: 32px 0 0;
+      }
+    }
+    &-note {
+      margin: 80px 0 0;
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 0.1em;
+      color: #666666;
+      @include sp {
+        margin: 60px 0 0;
+        font-size: 12px;
+      }
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      @include sp {
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 64px 0 0;
+      width: calc((100% - 58px) / 3);
+      @include sp {
+        width: calc((100% - 5px) / 2);
+      }
+      &__txt {
+        &-ttl {
+          margin: 24px 0 0;
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.2em;
+          color: #c68f4b;
+        }
+        &-span {
+          line-height: 1.4;
+          letter-spacing: 0.075em;
+          @include sp {
+            font-size: 18px;
+            letter-spacing: 0.02em;
+          }
+        }
+        &-desc {
+          margin: 24px 0 0;
+          font-weight: 400;
+          line-height: 1.75;
+          letter-spacing: 0.075em;
+        }
+      }
+    }
+    &__foot-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      @include sp {
+        flex-direction: column;
+      }
+      .equipment__item {
+        width: calc((100% - 40px) / 2);
+        @include sp {
+          width: 100%;
+        }
+        &__txt {
+          &__desc-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            @include sp {
+              flex-direction: column;
+            }
+          }
+          &-desc {
+            width: calc((100% - 20px) / 2);
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            @include sp {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
     &__tab {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 80px 40px;
+      padding: 80px 40px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
+      @include sp {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 80px 5px 0;
+      }
       &__ttl {
         padding: 22px 0;
         width: 224px;
         letter-spacing: 0.05em;
         text-align: center;
         border: 2px solid #000;
+        @include sp {
+          margin: 20px 5px 0;
+          width: 46%;
+        }
         &.is-active {
           background: #000;
           color: #fff;
+        }
+      }
+    }
+  }
+  .kitchen-space {
+    padding: 0 0 120px;
+    background: #f7f8f8;
+    @include sp {
+      padding: 0 5px 80px;
+    }
+  }
+  .gas-cooking {
+    background: #fff;
+    &__inner {
+      padding: 120px 40px;
+      @include sp {
+        padding: 80px 5px;
+      }
+    }
+    .equipment {
+      &-logo {
+        width: 88px;
+      }
+      &__item {
+        &:first-child {
+          .equipment__item__txt-ttl {
+            margin: 18px 0 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .bath-space {
+    padding: 0 0 120px;
+    @include sp {
+      padding: 0 0 80px;
+    }
+    .equipment {
+      &__list {
+        justify-content: flex-start;
+      }
+      &__item {
+        margin: 64px 39px 0 0;
+        width: 374px;
+        @include sp {
+          margin: 64px 0 0;
+          width: 100%;
+        }
+        &:nth-child(3),
+        &:nth-child(6),
+        &:nth-child(9) {
+          margin: 64px 0 0 0;
+        }
+      }
+    }
+  }
+  .sanitary-space {
+    padding: 0 0 120px;
+    @include sp {
+      padding: 0 0 80px;
+    }
+    .equipment {
+      &__list01,
+      &__list04 {
+        justify-content: space-between;
+        .equipment__item {
+          &:first-child,
+          &:nth-child(2) {
+            width: 580px;
+          }
+        }
+      }
+      &__list02 {
+        justify-content: space-between;
+        .equipment__item {
+          &:first-child {
+            width: 375px;
+            .equipment__item__txt-ttl {
+              @include sp {
+                font-size: 18px;
+              }
+            }
+          }
+          &:nth-child(2) {
+            width: 787px;
+          }
+          &:nth-child(3) {
+            .equipment__item__txt-ttl {
+              @include sp {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      &__list04 {
+        .equipment__item {
+          &:first-child {
+            .equipment__item__txt-ttl {
+              @include sp {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      &__list05 {
+        justify-content: flex-start;
+        .equipment__item {
+          &:first-child {
+            margin: 64px 40px 0 0;
+            width: 374px;
+            @include sp {
+              margin: 64px 0 0;
+            }
+          }
+          &:nth-child(2) {
+            margin: 64px 0 0;
+            width: 374px;
+          }
+        }
+      }
+    }
+  }
+  .eco-life {
+    padding: 0 0 120px;
+    @include sp {
+      padding: 0 0 80px;
+    }
+    .equipment {
+      &-txt {
+        @include sp {
+          font-size: 18px;
+          letter-spacing: 0.02em;
+        }
+      }
+      &-figure {
+        margin: 64px 0 0;
+      }
+      &-banar {
+        margin: 80px auto 0;
+        width: 960px;
+        @include sp {
+          margin: 20px 0 0;
+          width: 100%;
+        }
+      }
+      &-lead {
+        margin: 120px 0 0;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 2;
+        letter-spacing: 0.25em;
+        text-align: center;
+        @include sp {
+          margin: 80px 0 0;
+          font-size: 28px;
+        }
+      }
+      &__list01 {
+        .equipment__item {
+          &:first-child {
+            .equipment__item__txt-ttl {
+              @include sp {
+                font-size: 16px;
+              }
+            }
+            .equipment__item__txt-desc {
+              font-size: 15px;
+              letter-spacing: -0.02em;
+            }
+          }
+          &-desc {
+            @include sp {
+              margin: 10px 0 0;
+            }
+          }
+          &-caption {
+            margin: 28px 0 0;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: 0.2em;
+            @include sp {
+              margin: 10px 0 0;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      &__list02 {
+        justify-content: space-between;
+        @include sp {
+        }
+        .equipment__item {
+          flex-direction: row;
+          width: 50%;
+          @include sp {
+            flex-direction: column;
+            width: 100%;
+          }
+          &:first-child {
+            margin: 64px 15px 0 0;
+            width: 578px;
+            justify-content: flex-start;
+            align-items: center;
+            @include sp {
+              margin: 64px 0 0;
+            }
+            .equipment__item-figure {
+              margin: 0 25px 0 0;
+              width: 330px;
+            }
+          }
+          &:nth-child(2) {
+            justify-content: flex-end;
+            align-items: center;
+            .equipment__item-figure {
+              margin: 0 76px -40px 0;
+              width: 202px;
+              @include sp {
+                margin: 0;
+              }
+            }
+          }
+          &__txt {
+            width: 226px;
+            @include sp {
+              width: 100%;
+            }
+            &-ttl {
+              font-size: 16px;
+              line-height: 2;
+              letter-spacing: 0.2em;
+              color: #000;
+            }
+            &-strong {
+              font-size: 20px;
+              line-height: 1.6;
+            }
+            &-alert {
+              color: #c68f4b;
+            }
+            &-desc {
+              line-height: 1.75;
+              letter-spacing: 0;
+              @include sp {
+                margin: 12px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .eco-cycle {
+    padding: 120px 0;
+    background: #fff;
+    @include sp {
+      padding: 80px 0;
+    }
+    .equipment {
+      &-ttl {
+        margin: 0 auto;
+        width: 251px;
+      }
+      &-logo {
+        @include sp {
+          width: 30%;
+        }
+      }
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 77px 0 0;
+        width: 100%;
+        @include sp {
+          flex-direction: column;
+          margin: 20px 0 0;
+        }
+        &-figure {
+          &01 {
+            margin: 24px 10px 0 0;
+            width: 410px;
+            @include sp {
+              width: 100%;
+            }
+          }
+          &02 {
+            margin: 20px 0 0;
+            width: 460px;
+            @include sp {
+              width: 100%;
+            }
+          }
+        }
+        &__txt {
+          margin: 0 42px 0 0;
+          width: 284px;
+          @include sp {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .performance {
+      &__txt {
+        margin: 82px 0 0;
+        padding: 18px 0;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.2em;
+        text-align: center;
+        background: #e0e0e0;
+      }
+      &__figure {
+        margin: 40px 0 0;
+      }
+    }
+  }
+  .service {
+    .equipment {
+      &-txt {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.6;
+        letter-spacing: 0.2em;
+        @include sp {
+          font-size: 24px;
+        }
+      }
+      &-logo {
+        width: 257px;
+        @include sp {
+          width: 50%;
+        }
+      }
+      &__list {
+        @include sp {
+          flex-direction: column;
+        }
+      }
+      &__item {
+        flex-direction: column;
+        width: calc((100% - 180px) / 4);
+        text-align: center;
+        @include sp {
+          width: 100%;
+        }
+        &-ttl {
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 2;
+          letter-spacing: 0.05em;
+          color: #c68f4b;
+        }
+        &-lead {
+          position: relative;
+          font-size: 20px;
+          letter-spacing: 0.2em;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+          }
+        }
+        &-desc {
+          margin: 48px 0 0;
+          line-height: 2;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+  .concept-detail {
+    .inner {
+      padding: 120px 40px 40px;
+      @include sp {
+        padding: 80px 0;
+      }
+    }
+    &__ttl {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 2;
+      letter-spacing: 0.3em;
+      text-align: center;
+      @include sp {
+        font-size: 16px;
+        letter-spacing: 0.2em;
+      }
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin: 80px 0 0;
+      background: #fff;
+      @include sp {
+        flex-direction: column;
+      }
+      &__item {
+        padding: 37px 0 40px;
+        width: 25%;
+        border: 1px solid #e0e0e0;
+        border-right: none;
+        @include sp {
+          width: 100%;
+          border: 1px solid #e0e0e0;
+          border-bottom: none;
+        }
+        &:last-child {
+          border-right: 1px solid #e0e0e0;
+          @include sp {
+            border-bottom: 1px solid #e0e0e0;
+          }
+        }
+        &-num {
+          font-size: 54px;
+          font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Roboto,
+            "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+            "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI",
+            "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+          text-align: center;
+        }
+        &-ttl {
+          margin: 41px 0 0;
+          font-weight: 700;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          text-align: center;
+          color: #c68f4b;
+          @include sp {
+            margin: 30px 0 0;
+          }
+        }
+        &-desc {
+          margin: 32px 0 0;
+          padding: 0 22px 0 22px;
+          line-height: 2;
+          letter-spacing: 0.05em;
+          @include sp {
+            margin: 20px 0 0;
+          }
+        }
+      }
+    }
+    &__foot {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      @include sp {
+        flex-direction: column;
+      }
+      &-left {
+        padding: 0 0 40px;
+        width: 50.1%;
+        border: 1px solid #e0e0e0;
+        border-top: none;
+        @include sp {
+          width: 100%;
+        }
+      }
+      &-ttl {
+        margin: 41px 0 0;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+        text-align: center;
+        color: #c68f4b;
+      }
+      &-desc {
+        margin: 32px 0 0;
+        padding: 0 22px 0 22px;
+        line-height: 2;
+        letter-spacing: 0.05em;
+      }
+      &-graph {
+        margin: 0 auto;
+        @include sp {
+          margin: 20px auto;
+        }
+        &01 {
+          width: 515px;
+          @include sp {
+            width: 90%;
+          }
+        }
+        &02 {
+          margin: 27px auto 0;
+          width: 527px;
+          @include sp {
+            width: 90%;
+          }
+        }
+      }
+      &-right {
+        width: 49.9%;
+        border: 1px solid #e0e0e0;
+        border-top: none;
+        border-left: none;
+        @include sp {
+          padding: 0 0 40px 0;
+          width: 100%;
+          border: 1px solid #e0e0e0;
+          border-top: none;
+        }
+        .concept-detail__foot__txt {
+          display: flex;
+          @include sp {
+            flex-direction: column;
+          }
+        }
+      }
+      &-logo {
+        margin: 40px auto 0;
+        width: 414px;
+        @include sp {
+          width: 90%;
+        }
+      }
+    }
+  }
+  .clover {
+    background: #f8f8f8;
+    &__inner {
+      padding: 40px 40px 120px;
+      @include sp {
+        padding: 0 0 120px;
+      }
+    }
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      @include sp {
+        flex-direction: column;
+      }
+      &__left {
+        width: 600px;
+        padding: 46px 30px 37px;
+        @include sp {
+          width: 100%;
+        }
+      }
+      &__right {
+        width: 600px;
+        @include sp {
+          width: 100%;
+        }
+      }
+      &__ttl {
+        width: 387px;
+        @include sp {
+          width: 100%;
+        }
+      }
+      &__txt {
+        margin: 32px 0 0;
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+      }
+      &__thumb {
+        height: 100%;
+      }
+    }
+  }
+  .security {
+    padding: 120px 0;
+    background: #fff;
+    @include sp {
+      padding: 80px 0;
+    }
+    .equipment {
+      &-txt {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.6;
+        letter-spacing: 0.04em;
+        text-align: center;
+        @include sp {
+          font-size: 32px;
+        }
+      }
+      &__block {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0 0;
+        padding: 20px 40px;
+        background: #f7f8f8;
+        &01 {
+          @include sp {
+            flex-direction: column;
+          }
+        }
+        &02 {
+          justify-content: flex-start;
+          align-items: flex-start;
+          @include sp {
+            flex-direction: column;
+            padding: 20px 0;
+          }
+          .equipment__item {
+            margin: 0 40px 0 0;
+            width: 540px;
+            @include sp {
+              margin: 20px 0 0;
+              width: 100%;
+            }
+            &:nth-child(2) {
+              margin: 0;
+              padding: 22px 0 0;
+              .equipment__item__txt {
+                margin: 40px 0 0;
+              }
+            }
+            &__txt {
+              margin: 20px 0 0;
+              width: 100%;
+              line-height: 1.75;
+              letter-spacing: 0.05em;
+            }
+            &__figure {
+              &:first-child {
+                margin: 0 auto;
+                width: 427px;
+                @include sp {
+                  width: 100%;
+                }
+              }
+              &:nth-child(2) {
+                margin: 0 auto;
+                width: 478px;
+                @include sp {
+                  margin: 20px 0 0;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        &-figure {
+          &:first-child {
+            width: 612px;
+            @include sp {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            width: 444px;
+            @include sp {
+              margin: 20px 0 0;
+              width: 100%;
+            }
+          }
+        }
+        &-caption {
+          margin: 24px 0 0;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 1.75;
+          letter-spacing: 0.02em;
+        }
+        &-ttl {
+          margin: 80px 0 0;
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.2em;
+          color: #c68f4b;
+        }
+      }
+      &__list {
+        @include sp {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+      &__item {
+        flex-direction: column-reverse;
+        width: calc((100% - 120px) / 4);
+        text-align: left;
+        @include sp {
+          width: calc((100% - 5px) / 2);
+        }
+        &:first-child {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                letter-spacing: 0.05em;
+                @include sp {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                letter-spacing: 0.1em;
+                @include sp {
+                  font-size: 18px;
+                }
+              }
+              &-desc {
+                margin: 24px 0 0;
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                @include sp {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                letter-spacing: 0.1em;
+              }
+              &-desc {
+                margin: 24px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .comfortable {
+    padding: 120px 0;
+    @include sp {
+      padding: 80px 0;
+    }
+    .equipment {
+      &-txt {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+        text-align: center;
+        @include sp {
+          font-size: 32px;
+        }
+      }
+      &__list {
+        @include sp {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+      &__item {
+        flex-direction: column-reverse;
+        width: calc((100% - 120px) / 4);
+        text-align: left;
+        @include sp {
+          width: calc((100% - 5px) / 2);
+        }
+        &:first-child {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                @include sp {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                @include sp {
+                  font-size: 16px;
+                }
+              }
+            }
+            &__txt {
+              margin: -4px 0 0;
+            }
+          }
+        }
+        &:nth-child(8) {
+          .equipment__item {
+            &__txt {
+              &-ttl {
+                letter-spacing: 0.1em;
+              }
+            }
+          }
+        }
+        &__txt {
+          &-small {
+            font-size: 14px;
+            letter-spacing: 0em;
+          }
+        }
+      }
+      &__block {
+        margin: 64px 0 0;
+        padding: 48px 40px;
+        background: #fff;
+        @include sp {
+          padding: 48px 0;
+        }
+        &__head {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          @include sp {
+            justify-content: center;
+            flex-direction: column;
+          }
+          &-logo {
+            margin: 0 70px 0 0;
+            width: 330px;
+            @include sp {
+              margin: 0 auto;
+              width: 70%;
+            }
+          }
+          &-txt {
+            width: 724px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 2.44;
+            letter-spacing: 0em;
+            @include sp {
+              margin: 40px 0 0;
+              width: 100%;
+            }
+          }
+        }
+        &__foot {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin: 57px 0 0;
+          @include sp {
+            flex-direction: column;
+            align-items: center;
+          }
+          &-figure {
+            &:first-child,
+            &:last-child {
+              width: 348px;
+              @include sp {
+                width: 100%;
+              }
+            }
+            &:nth-child(2) {
+              width: 358px;
+              @include sp {
+                margin: 64px 0 0;
+                width: 100%;
+              }
+            }
+            &:last-child {
+              @include sp {
+                margin: 64px 0 0;
+              }
+            }
+          }
+          &-caption {
+            margin: 24px 0 0;
+            line-height: 1.75;
+            letter-spacing: 0.05em;
+          }
         }
       }
     }

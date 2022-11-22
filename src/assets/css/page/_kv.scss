@@ -1,11 +1,45 @@
 .home {
   .kv {
-    background: url(../images/webp/kv-pc.webp) no-repeat 50% 40% / cover;
-    height: 120vh;
-    position: relative;
-    @include sp {
-      background: url(../images/webp/kv-sp.webp) no-repeat 30% 100% / cover;
-      height: 120vh;
+    &__bg {
+      &01 {
+        background: url(../images/webp/kv_pc.webp) no-repeat 50% 40% / cover;
+        height: 120vh;
+        position: relative;
+        @include sp {
+          background: url(../images/webp/kv_sp.webp) no-repeat 30% 100% / cover;
+          height: 120vh;
+        }
+      }
+      &02 {
+        background: url(../images/webp/kv_02.webp) no-repeat 50% 10% / cover;
+        height: 120vh;
+        position: relative;
+        @include sp {
+          background: url(../images/webp/kv_02.webp) no-repeat 60% 100% / cover;
+          height: 120vh;
+        }
+        .kv__hero-ttl {
+          position: relative;
+          margin: 0;
+          padding: 334px 0 532px;
+          font-weight: 500;
+          font-size: 60px;
+          line-height: 1.73;
+          letter-spacing: 0.5em;
+          text-align: center;
+          color: #fff;
+          text-shadow: 2px 2px 20px #000;
+          z-index: 20;
+          @include midium {
+            padding: 280px 0;
+            font-size: 50px;
+          }
+          @include sp {
+            padding: 180px 10px;
+            font-size: 30px;
+          }
+        }
+      }
     }
     &__hero {
       @include sp {
@@ -13,7 +47,7 @@
         width: 100%;
       }
       &-logo {
-        margin: 0 0 0 65px;
+        margin: 0 0 0 85px;
         width: 200px;
       }
       &-ttl {
@@ -22,11 +56,8 @@
     }
   }
   .bar {
-    position: absolute;
-    bottom: -440px;
     width: 100%;
     @include sp {
-      bottom: -600px;
     }
   }
   .bar01 {
@@ -206,7 +237,7 @@
       justify-content: space-between;
       align-items: center;
       margin: 0 auto;
-      width: 1400px;
+      width: 100%;
       @include sp {
         flex-wrap: wrap;
         width: 100%;
@@ -214,13 +245,20 @@
     }
     &__item {
       position: relative;
-      text-align: center;
+      padding: 20px 0;
+      width: 378px;
       border-right: 1px solid #fff;
-      padding: 20px 35px 20px 0;
+      text-align: center;
+      @include midium {
+        padding: 20px 0;
+      }
       @include sp {
         padding: 20px 5px;
         width: 50%;
         border: none;
+      }
+      &:nth-child(4) {
+        padding-right: 3%;
       }
       &:last-child {
         border-right: none;
@@ -250,6 +288,7 @@
       .pet {
         margin: -14px 0 0;
         line-height: 0;
+        text-align: right;
         @include sp {
           margin: -10px 0 0;
         }

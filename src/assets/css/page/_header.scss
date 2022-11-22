@@ -168,13 +168,25 @@ $sp: 500px;
       &:nth-child(6).is-active ruby[data-ruby] {
         &:after {
           width: 120%;
-          left: 10%;
+          left: -10%;
         }
       }
       &:nth-child(7).is-active ruby[data-ruby] {
         &:after {
           width: 122%;
           left: -10%;
+        }
+      }
+      &:nth-child(8).is-active ruby[data-ruby] {
+        &:after {
+          width: 115%;
+          left: -7%;
+        }
+      }
+      &:last-child.is-active ruby[data-ruby] {
+        &:after {
+          width: 115%;
+          left: -7%;
         }
       }
       &::before {

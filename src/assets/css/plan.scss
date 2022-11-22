@@ -21,7 +21,7 @@
           bottom: -40px;
           @include sp {
             bottom: -20px;
-            left: 55px;
+            left: 35px;
           }
         }
       }
@@ -33,6 +33,10 @@
       justify-content: space-between;
       align-items: center;
       padding: 80px 0;
+      @include sp {
+        flex-wrap: wrap;
+        padding: 60px 0;
+      }
       &__btn {
         position: relative;
         padding: 20px 98px 20px 88px;
@@ -41,6 +45,11 @@
         font-size: 18px;
         letter-spacing: 0.05em;
         vertical-align: bottom;
+        @include sp {
+          margin: 20px 0 0;
+          padding: 20px 40px;
+          width: calc((100% - 5px) / 2);
+        }
         &::before {
           content: "";
           display: inline-block;
@@ -64,6 +73,9 @@
   .type {
     &__inner {
       padding: 0 40px 120px;
+      @include sp {
+        padding: 0 0 120px;
+      }
     }
     &__list {
       display: flex;
@@ -71,6 +83,9 @@
       &__item {
         padding: 48px;
         background: #fff;
+        @include sp {
+          padding: 40px 5px;
+        }
         &:not(:first-child) {
           margin: 120px 0 0;
         }
@@ -81,19 +96,33 @@
       }
       &__head {
         display: flex;
+        @include sp {
+          flex-direction: column;
+        }
         &__ttl {
           margin: 24px 40px 0;
           width: 138px;
+          @include sp {
+            margin: 0 auto;
+            width: 40%;
+          }
         }
         .detail {
           margin: 0 80px 0 0;
           padding: 0 0 40px 40px;
           width: 560px;
           border-left: 1px solid #d9d9da;
+          @include sp {
+            padding: 0;
+            width: 100%;
+            border-left: none;
+          }
           &__list {
             &:first-child {
               padding: 24px 0 0;
               border-bottom: 1px solid #d9d9da;
+              @include sp {
+              }
               .detail__list {
                 &__ttl {
                   margin: 0 30px 0 0;
@@ -103,6 +132,10 @@
                   line-height: 1.83;
                   letter-spacing: 0.035em;
                   color: #c68f4b;
+                  @include sp {
+                    margin: 0 10px 0 0;
+                    padding: 0 0 10px 0;
+                  }
                 }
                 &__desc {
                   font-weight: 500;
@@ -130,6 +163,10 @@
         }
         &__figure {
           width: 248px;
+          @include sp {
+            margin: 20px 0 0;
+            width: 80%;
+          }
         }
       }
       &__foot {
@@ -151,6 +188,10 @@
         top: -77px;
         left: 0;
         width: 100%;
+        @include sp {
+          align-items: inherit;
+          top: -62px;
+        }
         &__ttl {
           padding: 29px 0;
           width: 50%;
@@ -159,6 +200,16 @@
           letter-spacing: 0.05em;
           text-align: center;
           background: #d9d9da;
+          cursor: pointer;
+          @include sp {
+            padding: 10px 0;
+            font-size: 18px;
+          }
+          &:first-child {
+            @include sp {
+              padding: 21px 0;
+            }
+          }
           &.is-active {
             background: #fff;
           }
